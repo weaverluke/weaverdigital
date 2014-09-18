@@ -1,0 +1,16 @@
+.logo{
+	text-align:center;
+	height:100%;	// set as non-js default
+	background:#fff;
+	position:relative;
+	
+	h1{
+		@include reset-margins;
+		position:absolute;
+		width:100%;
+		top:50%;
+		margin-top:-25px;
+		text-indent:-9999px;
+		background-position:center;
+	}
+}

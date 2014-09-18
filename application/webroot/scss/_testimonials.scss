@@ -1,0 +1,11 @@
+/*	testimonials
+  ------------------------------------------- */
+.testimonials > blockquote{
+	@include reset-margins;
+	padding:0 20px;
+	
+	> cite{
+		color:$light-grey;
+		font-style:normal;
+	}
+}

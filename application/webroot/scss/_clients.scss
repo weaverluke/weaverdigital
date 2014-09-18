@@ -1,0 +1,28 @@
+.client{
+	text-indent:-9999px;
+	background-position:center;
+	
+	&.icon-worldpay{
+		height:35px;
+	}
+
+	&.icon-blinkbox{
+		height:40px;
+	}
+
+	&.icon-zurich{
+		height:71px;
+	}
+	
+	&.icon-financial-times{
+		height:70px;
+	}
+	
+	&.icon-tfl{
+		height:41px;
+	}
+	
+	&.icon-vodafone{
+		height:75px;
+	}
+}

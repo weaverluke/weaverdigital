@@ -1,0 +1,28 @@
+/*	grid
+  ------------------------------------------- */
+.grid{
+	overflow:hidden;
+	@include reset-margins;
+	@include container;
+	margin-bottom: 100px;
+	list-style:none;
+}
+
+.grid > li{
+	margin:0 0 30px;
+	@include respond(small){
+		float:left;		
+		width:50%;
+	}
+}
+
+/* container
+  ------------------------------------------- */
+.container{
+	@include container;
+	padding-bottom: 100px;
+}
+
+.container-extra-pad{
+	padding-bottom: 150px;		
+}

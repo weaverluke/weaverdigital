@@ -1,0 +1,31 @@
+@import 'variables', 'mixins';
+
+html{
+    height:100%;
+}
+
+body{
+    height:100%;
+	color:#666;
+	margin:0;
+	font:{
+		family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+		weight: 300;
+		size:20px;
+	};
+	-webkit-text-size-adjust: 100%;
+}
+
+img{
+	border:none;
+}
+
+a{
+	outline:none;
+	text-decoration:none;
+	color:$grey;
+	
+	&:hover, &:active{
+		color:$red;
+	}
+}

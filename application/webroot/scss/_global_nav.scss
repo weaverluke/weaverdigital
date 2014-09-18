@@ -1,0 +1,49 @@
+/*	global-nav
+  ------------------------------------------- */
+.global-nav{
+	background:#fbfbfb;
+	text-align:right;
+	position:fixed;
+	top:0;
+	width:100%;
+	border-bottom:1px solid #e9e9ea;
+	@include reset-margins;
+	
+	> li{
+		display:inline;
+		
+		> a{
+			font-size:16px;
+			color:$grey;
+			display:inline-block;
+			padding:17px 7px;
+			text-align:center;
+			margin-right: -6px;
+			
+			&.is-active{
+				color:$red;
+			}
+		}
+		
+		&:first-child{
+			float:left;
+			
+			> a{
+				margin:0 0 0 17px;
+				padding:17px 0;
+				display:block;
+				text-indent: 100%;
+				white-space: nowrap; 
+				overflow: hidden;
+				background-position:center;
+				width:22px;
+			}
+		}
+		
+		&:last-child{
+			> a{
+				margin:0 11px 0 0;
+			}
+		}
+	}
+}
