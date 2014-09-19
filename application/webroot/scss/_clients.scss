@@ -1,7 +1,10 @@
 .client{
-	text-indent:-9999px;
-	background-position:center;
-	
+	text-indent: 100%;
+	white-space: nowrap; 
+	overflow: hidden;
+	background-position:center center;
+	height:75px !important;
+/*	
 	&.icon-worldpay{
 		height:35px;
 	}
@@ -25,4 +28,5 @@
 	&.icon-vodafone{
 		height:75px;
 	}
+	*/
 }

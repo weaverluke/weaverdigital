@@ -1,11 +1,16 @@
 /*	testimonials
   ------------------------------------------- */
-.testimonials > blockquote{
-	@include reset-margins;
-	padding:0 20px;
+.testimonials{
+	margin:auto;
+	max-width:410px;
 	
-	> cite{
-		color:$light-grey;
-		font-style:normal;
+	> blockquote{
+		@include reset-margins;
+		padding:0 20px 40px;
+		
+		> cite{
+			color:$light-grey;
+			font-style:normal;
+		}
 	}
 }

@@ -14,6 +14,10 @@ body{
 		size:20px;
 	};
 	-webkit-text-size-adjust: 100%;
+	
+	&.is-splash{
+		padding-top:200%;	// to allow a scroll event
+	}
 }
 
 img{

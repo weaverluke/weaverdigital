@@ -8,10 +8,10 @@ module.exports = function(grunt) {
 		    dist: {
 		        src: [
 		            'application/webroot/js/libs/jquery-1.11.1.min.js',
-		            'application/webroot/js/libs/bootstrap.min.js',
-					'application/webroot/js/libs/isotope.pkgd.min.js',
-					'application/webroot/js/libs/imagesloaded.pkgd.min.js',
-					'application/webroot/js/libs/jquery.infinitescroll.min.js',
+//		            'application/webroot/js/libs/bootstrap.min.js',
+//					'application/webroot/js/libs/isotope.pkgd.min.js',
+//					'application/webroot/js/libs/imagesloaded.pkgd.min.js',
+//					'application/webroot/js/libs/jquery.infinitescroll.min.js',
 		            'application/webroot/js/global.js'
 		        ],
 		        dest: 'application/webroot/js/production/scripts.js',

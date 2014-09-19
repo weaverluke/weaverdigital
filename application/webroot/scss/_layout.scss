@@ -4,25 +4,60 @@
 	overflow:hidden;
 	@include reset-margins;
 	@include container;
-	margin-bottom: 100px;
 	list-style:none;
+//	margin:0 auto 40px;
+	margin:auto;
+	max-width:410px;
+//	background:red;
+	
+	@include respond(small){
+//		margin:0 auto 50px;	
+	}
 }
 
 .grid > li{
-	margin:0 0 30px;
+	margin:0 0 40px;
 	@include respond(small){
+		margin:0 0 80px;
 		float:left;		
 		width:50%;
+	}	
+}
+
+.container-outer{
+	display:table;
+	height:100%;
+	width:100%;
+	
+	&.is-splash{
+		background:#fff;
+		z-index:1;
+	}
+	
+	&.is-transition{
+		transition:opacity 0.3s 0.3s;
+	}
+	
+	&.is-hidden{
+		opacity:0;
 	}
 }
+
+.is-fixed{
+		position:fixed;
+		width:100%;
+		height:100%;
+		top:0;
+	}
+
 
 /* container
   ------------------------------------------- */
 .container{
-	@include container;
-	padding-bottom: 100px;
-}
-
-.container-extra-pad{
-	padding-bottom: 150px;		
+//	@include container;
+//	overflow:hidden;
+	height:100%;
+//	width:100%;
+	display:table-cell;
+	vertical-align:middle;
 }

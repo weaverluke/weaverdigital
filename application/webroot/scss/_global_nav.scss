@@ -8,6 +8,7 @@
 	width:100%;
 	border-bottom:1px solid #e9e9ea;
 	@include reset-margins;
+//	z-index:2;
 	
 	> li{
 		display:inline;
@@ -16,12 +17,19 @@
 			font-size:16px;
 			color:$grey;
 			display:inline-block;
-			padding:17px 7px;
+			padding:17px 0 0;
+			min-width:64px;
 			text-align:center;
 			margin-right: -6px;
+//			min-height:35px;
+
+			@include respond(small){
+				padding:17px 7px 0;
+			}
 			
 			&.is-active{
-				color:$red;
+				font-weight:bold;
+//				color:$red;
 			}
 		}
 		
@@ -36,14 +44,23 @@
 				white-space: nowrap; 
 				overflow: hidden;
 				background-position:center;
+				min-width:0;
 				width:22px;
 			}
 		}
 		
 		&:last-child{
 			> a{
-				margin:0 11px 0 0;
+				margin:0 5px 0 0;
 			}
 		}
+	}
+	
+	&.is-transition{
+		transition:opacity 0.3s;
+	}
+	
+	&.is-hidden{
+		opacity:0;
 	}
 }

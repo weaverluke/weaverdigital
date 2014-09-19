@@ -9,6 +9,8 @@ body {
   font-weight: 300;
   font-size: 20px;
   -webkit-text-size-adjust: 100%; }
+  body.is-splash {
+    padding-top: 200%; }
 
 img {
   border: none; }
@@ -26,51 +28,87 @@ a {
   overflow: hidden;
   margin: 0;
   padding: 0;
-  max-width: 410px;
+  list-style: none;
   margin: auto;
-  margin-bottom: 100px;
-  list-style: none; }
+  max-width: 410px; }
 
 .grid > li {
-  margin: 0 0 30px; }
+  margin: 0 0 40px; }
   @media screen and (min-width: 480px) {
     .grid > li {
+      margin: 0 0 80px;
       float: left;
       width: 50%; } }
   .lt-ie9 .grid > li {
+    margin: 0 0 80px;
     float: left;
     width: 50%; }
+
+.container-outer {
+  display: table;
+  height: 100%;
+  width: 100%; }
+  .container-outer.is-splash {
+    background: #fff;
+    z-index: 1; }
+  .container-outer.is-transition {
+    transition: opacity 0.3s 0.3s; }
+  .container-outer.is-hidden {
+    opacity: 0; }
+
+.is-fixed {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0; }
 
 /* container
   ------------------------------------------- */
 .container {
-  max-width: 410px;
-  margin: auto;
-  padding-bottom: 100px; }
-
-.container-extra-pad {
-  padding-bottom: 150px; }
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle; }
 
 .client {
-  text-indent: -9999px;
-  background-position: center; }
-  .client.icon-worldpay {
-    height: 35px; }
-  .client.icon-blinkbox {
-    height: 40px; }
-  .client.icon-zurich {
-    height: 71px; }
-  .client.icon-financial-times {
-    height: 70px; }
-  .client.icon-tfl {
-    height: 41px; }
-  .client.icon-vodafone {
-    height: 75px; }
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-position: center center;
+  height: 75px !important;
+  /*	
+  	&.icon-worldpay{
+  		height:35px;
+  	}
+  
+  	&.icon-blinkbox{
+  		height:40px;
+  	}
+  
+  	&.icon-zurich{
+  		height:71px;
+  	}
+  	
+  	&.icon-financial-times{
+  		height:70px;
+  	}
+  	
+  	&.icon-tfl{
+  		height:41px;
+  	}
+  	
+  	&.icon-vodafone{
+  		height:75px;
+  	}
+  	*/ }
 
 /*	content (standard copy styles)
   ------------------------------------------- */
 .content {
-  padding: 0 20px; }
+  padding: 0 20px;
+  max-width: 410px;
+  margin: auto; }
+  .content > p {
+    margin: 0 0 1em; }
 
 .footer-bar {
   height: 2px;
@@ -97,11 +135,17 @@ a {
       font-size: 16px;
       color: #666666;
       display: inline-block;
-      padding: 17px 7px;
+      padding: 17px 0 0;
+      min-width: 64px;
       text-align: center;
       margin-right: -6px; }
+      @media screen and (min-width: 480px) {
+        .global-nav > li > a {
+          padding: 17px 7px 0; } }
+      .lt-ie9 .global-nav > li > a {
+        padding: 17px 7px 0; }
       .global-nav > li > a.is-active {
-        color: #d92128; }
+        font-weight: bold; }
     .global-nav > li:first-child {
       float: left; }
       .global-nav > li:first-child > a {
@@ -112,31 +156,39 @@ a {
         white-space: nowrap;
         overflow: hidden;
         background-position: center;
+        min-width: 0;
         width: 22px; }
     .global-nav > li:last-child > a {
-      margin: 0 11px 0 0; }
+      margin: 0 5px 0 0; }
+  .global-nav.is-transition {
+    transition: opacity 0.3s; }
+  .global-nav.is-hidden {
+    opacity: 0; }
 
-.logo {
-  text-align: center;
-  height: 100%;
-  background: #fff;
-  position: relative; }
-  .logo h1 {
+.splash {
+  transition: opacity 0.3s; }
+  .splash.is-hidden {
+    opacity: 0; }
+  .splash h1 {
     margin: 0;
     padding: 0;
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    margin-top: -25px;
-    text-indent: -9999px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
     background-position: center; }
+
+.main {
+  height: 100%; }
 
 /*	testimonials
   ------------------------------------------- */
-.testimonials > blockquote {
-  margin: 0;
-  padding: 0;
-  padding: 0 20px; }
-  .testimonials > blockquote > cite {
-    color: #999999;
-    font-style: normal; }
+.testimonials {
+  margin: auto;
+  max-width: 410px; }
+  .testimonials > blockquote {
+    margin: 0;
+    padding: 0;
+    padding: 0 20px 40px; }
+    .testimonials > blockquote > cite {
+      color: #999999;
+      font-style: normal; }
