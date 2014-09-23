@@ -145,18 +145,14 @@ a {
           padding: 17px 7px 0; } }
       .lt-ie9 .global-nav > li > a {
         padding: 17px 7px 0; }
-      .global-nav > li > a:hover {
+      @media screen and (min-width: 960px) {
+        .global-nav > li > a:hover {
+          color: #d92128; } }
+      .lt-ie9 .global-nav > li > a:hover {
         color: #d92128; }
     .global-nav > li.active > a {
       font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
       font-weight: 400; }
-      .global-nav > li.active > a:hover {
-        color: #666666; }
-        @media screen and (min-width: 960px) {
-          .global-nav > li.active > a:hover {
-            color: #d92128; } }
-        .lt-ie9 .global-nav > li.active > a:hover {
-          color: #d92128; }
     .global-nav > li:first-child {
       float: left; }
       .global-nav > li:first-child > a {
@@ -177,20 +173,13 @@ a {
   .global-nav.is-hidden {
     opacity: 0; }
 
-.splash {
-  transition: opacity 0.3s; }
-  .splash.is-hidden {
-    opacity: 0; }
-  .splash h1 {
-    margin: 0;
-    padding: 0;
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    background-position: center; }
-
-.main {
-  height: 100%; }
+.splash h1 {
+  margin: 0;
+  padding: 0;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-position: center; }
 
 /*	testimonials
   ------------------------------------------- */
