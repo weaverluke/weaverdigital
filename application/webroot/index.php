@@ -55,13 +55,25 @@
 						<div class="client icon-blinkbox">Blinkbox</div>
 					</li>
 					<li>
+						<div class="client icon-call-credit">Call Credit</div>
+					</li>
+					<li>
 						<div class="client icon-financial-times">Financial Times</div>
+					</li>
+					<li>
+						<div class="client icon-honda">Honda</div>
+					</li>
+					<li>
+						<div class="client icon-thomson-reuters">Thomson Reuters</div>
 					</li>
 					<li>
 						<div class="client icon-tfl">Transport for London</div>
 					</li>
 					<li>
 						<div class="client icon-vodafone">Vodafone</div>
+					</li>
+					<li>
+						<div class="client icon-which">Which</div>
 					</li>
 					<li>
 						<div class="client icon-worldpay">Worldpay</div>
@@ -97,6 +109,12 @@
 		
 	<div class="footer-bar" aria-hidden="true"></div>
 	
+	<!-- 
+		*
+		*	add some google analytics! 
+		*
+										-->
+		
 	<?php
 		if(isset($_SERVER['SERVER_NAME'])) {
 		    if(preg_match('/local|192/',$_SERVER['SERVER_NAME'])){
@@ -106,6 +124,6 @@
 		    }
 		}
 	?>
-	
+		
 </body>
 </html>
