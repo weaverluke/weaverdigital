@@ -146,13 +146,17 @@ a {
       .lt-ie9 .global-nav > li > a {
         padding: 17px 7px 0; }
       .global-nav > li > a:hover {
-        color: #d92128;
-        font-weight: inherit; }
+        color: #d92128; }
     .global-nav > li.active > a {
       font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
       font-weight: 400; }
       .global-nav > li.active > a:hover {
-        color: #d92128; }
+        color: #666666; }
+        @media screen and (min-width: 960px) {
+          .global-nav > li.active > a:hover {
+            color: #d92128; } }
+        .lt-ie9 .global-nav > li.active > a:hover {
+          color: #d92128; }
     .global-nav > li:first-child {
       float: left; }
       .global-nav > li:first-child > a {

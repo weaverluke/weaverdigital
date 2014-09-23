@@ -11,7 +11,7 @@
 		<script src="/js/production/scripts.js" async="async"></script>
 		<noscript><link href="/img/grunticon/icons.fallback.css" rel="stylesheet" /></noscript>
 </head>
-<body data-spy="scroll" data-target=".global-nav-container" data-offset="83">
+<body data-spy="scroll" data-target=".global-nav-container" data-offset="84">
 	
 	<nav>
 		<div class="global-nav-container">

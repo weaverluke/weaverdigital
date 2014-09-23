@@ -20,7 +20,6 @@
 			min-width:64px;
 			text-align:center;
 			margin-right: -6px;
-//			min-height:35px;
 
 			@include respond(small){
 				padding:17px 7px 0;
@@ -28,7 +27,6 @@
 			
 			&:hover{
 				color:$red;
-				font-weight:inherit;
 			}
 		}
 		
@@ -40,7 +38,11 @@
 				};
 				
 				&:hover{
-					color:$red;
+					color:$grey;
+					
+					@include respond(large){
+						color:$red;
+					}
 				}
 			}
 		}
