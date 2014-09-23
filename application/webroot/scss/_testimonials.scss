@@ -8,6 +8,10 @@
 		@include reset-margins;
 		padding:0 20px 40px;
 		
+		@include respond(large){
+			padding:0 0 40px;
+		}
+		
 		> cite{
 			color:$light-grey;
 			font-style:normal;

@@ -1,32 +1,5 @@
 .client{
-	text-indent: 100%;
-	white-space: nowrap; 
-	overflow: hidden;
+	text-indent: -9999px;
 	background-position:center center;
-	height:75px !important;
-/*	
-	&.icon-worldpay{
-		height:35px;
-	}
-
-	&.icon-blinkbox{
-		height:40px;
-	}
-
-	&.icon-zurich{
-		height:71px;
-	}
-	
-	&.icon-financial-times{
-		height:70px;
-	}
-	
-	&.icon-tfl{
-		height:41px;
-	}
-	
-	&.icon-vodafone{
-		height:75px;
-	}
-	*/
+	height:75px;
 }

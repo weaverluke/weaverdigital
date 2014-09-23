@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+<!--[if lt IE 8]><html class="lt-ie8 lt-ie9"><![endif]-->
 <!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
 <head>
 	<meta charset="UTF-8" />
@@ -100,7 +101,7 @@
 		if(isset($_SERVER['SERVER_NAME'])) {
 		    if(preg_match('/local|192/',$_SERVER['SERVER_NAME'])){
 	?>	
-		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+		<script>//document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 	<?php
 		    }
 		}

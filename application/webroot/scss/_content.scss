@@ -4,7 +4,10 @@
 	padding:0 20px;
 	max-width:410px;
 	margin:auto;
-//	background:yellow;		
+	
+	@include respond(large){
+		padding:0;
+	}
 			
 	> p{
 		margin:0 0 1em;

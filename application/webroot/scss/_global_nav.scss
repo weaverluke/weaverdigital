@@ -38,6 +38,14 @@
 					family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 					weight: 400;
 				};
+				
+				&:hover{
+					color:$grey;
+					
+					@include respond(large){
+						color:$red;
+					}
+				}
 			}
 		}
 		
@@ -48,13 +56,10 @@
 				margin:0 0 0 17px;
 				padding:17px 0;
 				display:block;
-				text-indent: 100%;
-				white-space: nowrap; 
-				overflow: hidden;
+				text-indent: -9999px;
 				background-position:center;
-				background-size:100%;
 				min-width:0;
-				width:22px;
+				width:23px;
 			}
 		}
 		
