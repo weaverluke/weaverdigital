@@ -8,7 +8,8 @@ body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
   font-size: 20px;
-  -webkit-text-size-adjust: 100%; }
+  -webkit-text-size-adjust: 100%;
+  position: relative; }
   body.is-splash {
     padding-top: 200%; }
 
@@ -144,8 +145,14 @@ a {
           padding: 17px 7px 0; } }
       .lt-ie9 .global-nav > li > a {
         padding: 17px 7px 0; }
-      .global-nav > li > a.is-active {
-        font-weight: bold; }
+      .global-nav > li > a:hover {
+        color: #d92128;
+        font-weight: inherit; }
+    .global-nav > li.active > a {
+      font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      font-weight: 400; }
+      .global-nav > li.active > a:hover {
+        color: #d92128; }
     .global-nav > li:first-child {
       float: left; }
       .global-nav > li:first-child > a {
@@ -156,6 +163,7 @@ a {
         white-space: nowrap;
         overflow: hidden;
         background-position: center;
+        background-size: 100%;
         min-width: 0;
         width: 22px; }
     .global-nav > li:last-child > a {

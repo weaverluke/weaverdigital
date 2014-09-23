@@ -11,18 +11,20 @@
 		<script src="/js/production/scripts.js" async="async"></script>
 		<noscript><link href="/img/grunticon/icons.fallback.css" rel="stylesheet" /></noscript>
 </head>
-<body>
+<body data-spy="scroll" data-target=".global-nav-container" data-offset="83">
 	
 	<nav>
-		<ul class="global-nav">
-			<li><a class="icon-logo-w" href="#About" data-scroll="#About">Home</a></li>
-			<li><a href="#About" data-scroll="#About">About</a></li>
-			<li><a href="#Clients" data-scroll="#Clients">Clients</a></li>
-			<li><a href="#Contact" data-scroll="#Contact">Contact</a></li>
-		</ul>
+		<div class="global-nav-container">
+			<ul class="global-nav nav">
+				<li><a class="icon-logo-w" href="#Logo" data-scroll="#Logo">Home</a></li>
+				<li><a href="#About" data-scroll="#About">About</a></li>
+				<li><a href="#Clients" data-scroll="#Clients">Clients</a></li>
+				<li><a href="#Contact" data-scroll="#Contact">Contact</a></li>
+			</ul>
+		</div>
 	</nav>
 	
-	<div class="container-outer">
+	<div class="container-outer" id="Logo">
 		<div class="container">
 			<div class="splash">
 				<header>
@@ -32,70 +34,66 @@
 		</div>
 	</div>
 	
-	<div class="main">
-		
-		<div class="container-outer" id="About">
-			<div class="container">	
-				<section>
-					<div class="content">	
-						<p>Weaver is a boutique design consultancy, specialising in challenging and complex digital projects.</p>
-						<p>Weaver’s founder Luke Razzell  leads every project, collaborating with virtualised teams of handpicked associates.</p>		
-					</div>
-				</section>
-			</div>
-		
+	<div class="container-outer" id="About">
+		<div class="container">	
+			<section>
+				<div class="content">	
+					<p>Weaver is a boutique design consultancy, specialising in challenging and complex digital projects.</p>
+					<p>Weaver’s founder Luke Razzell  leads every project, collaborating with virtualised teams of handpicked associates.</p>		
+				</div>
+			</section>
 		</div>
 	
-		<div class="container-outer"  id="Clients">
-			<div class="container">		
-				<section>					
-					<ul class="grid">
-						<li>
-							<div class="client icon-blinkbox">Blinkbox</div>
-						</li>
-						<li>
-							<div class="client icon-financial-times">Financial Times</div>
-						</li>
-						<li>
-							<div class="client icon-tfl">Transport for London</div>
-						</li>
-						<li>
-							<div class="client icon-vodafone">Vodafone</div>
-						</li>
-						<li>
-							<div class="client icon-worldpay">Worldpay</div>
-						</li>
-						<li>
-							<div class="client icon-zurich">Zurich</div>
-						</li>								
-					</ul>						
-					<div class="testimonials">
-						<blockquote>
-							<p>“Luke asks the right questions ... and is quick to spot strategic opportunities”</p>
-							<cite>Todd McPherson, Design Director, Time Out</cite>
-						</blockquote>
-						<blockquote>
-							<p>“Your work on user experience, interaction and interface design has been enormously valuable...”</p>
-							<cite>Rian Liebenberg, Ex-Director of Engineering, Google</cite>
-						</blockquote>		
-					</div>
-				</section>
-			</div>
-		</div>
-	
-		<div class="container-outer" id="Contact">
-			<div class="container">
-				<footer>
-					<div class="content content-footer">
-						<p><a href="mailto:luke@weaverdigital.com">luke@weaverdigital.com</a></p>
-						<p><a href="//twitter.com/weaverluke">@weaverluke</a></p>
-					</div>
-				</footer>
-			</div>	
-		</div>
-		
 	</div>
 	
+	<div class="container-outer" id="Clients">
+		<div class="container">		
+			<section>					
+				<ul class="grid">
+					<li>
+						<div class="client icon-blinkbox">Blinkbox</div>
+					</li>
+					<li>
+						<div class="client icon-financial-times">Financial Times</div>
+					</li>
+					<li>
+						<div class="client icon-tfl">Transport for London</div>
+					</li>
+					<li>
+						<div class="client icon-vodafone">Vodafone</div>
+					</li>
+					<li>
+						<div class="client icon-worldpay">Worldpay</div>
+					</li>
+					<li>
+						<div class="client icon-zurich">Zurich</div>
+					</li>								
+				</ul>						
+				<div class="testimonials">
+					<blockquote>
+						<p>“Luke asks the right questions ... and is quick to spot strategic opportunities”</p>
+						<cite>Todd McPherson, Design Director, Time Out</cite>
+					</blockquote>
+					<blockquote>
+						<p>“Your work on user experience, interaction and interface design has been enormously valuable...”</p>
+						<cite>Rian Liebenberg, Ex-Director of Engineering, Google</cite>
+					</blockquote>		
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<div class="container-outer" id="Contact">
+		<div class="container">
+			<footer>
+				<div class="content content-footer">
+					<p><a href="mailto:luke@weaverdigital.com">luke@weaverdigital.com</a></p>
+					<p><a href="//twitter.com/weaverluke">@weaverluke</a></p>
+				</div>
+			</footer>
+		</div>	
+	</div>
+		
 	<div class="footer-bar" aria-hidden="true"></div>
 	
 	<?php

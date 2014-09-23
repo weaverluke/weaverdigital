@@ -8,7 +8,6 @@
 	width:100%;
 	border-bottom:1px solid #e9e9ea;
 	@include reset-margins;
-//	z-index:2;
 	
 	> li{
 		display:inline;
@@ -27,9 +26,22 @@
 				padding:17px 7px 0;
 			}
 			
-			&.is-active{
-				font-weight:bold;
-//				color:$red;
+			&:hover{
+				color:$red;
+				font-weight:inherit;
+			}
+		}
+		
+		&.active{
+			> a{
+				font:{
+					family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+					weight: 400;
+				};
+				
+				&:hover{
+					color:$red;
+				}
 			}
 		}
 		
@@ -44,6 +56,7 @@
 				white-space: nowrap; 
 				overflow: hidden;
 				background-position:center;
+				background-size:100%;
 				min-width:0;
 				width:22px;
 			}
