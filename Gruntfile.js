@@ -7,21 +7,18 @@ module.exports = function(grunt) {
 		concat: {   
 		    dist: {
 		        src: [
-		            'application/webroot/js/libs/jquery-1.11.1.min.js',
-		            'application/webroot/js/libs/bootstrap.min.js',
-//					'application/webroot/js/libs/isotope.pkgd.min.js',
-//					'application/webroot/js/libs/imagesloaded.pkgd.min.js',
-//					'application/webroot/js/libs/jquery.infinitescroll.min.js',
-		            'application/webroot/js/global.js'
+		            'js/libs/jquery-1.11.1.min.js',
+		            'js/libs/bootstrap.min.js',
+		            'js/global.js'
 		        ],
-		        dest: 'application/webroot/js/production/scripts.js',
+		        dest: 'js/production/scripts.js',
 		    }
 		},
 		
 		uglify: {
 			my_target: {
 				files: {
-				'application/webroot/js/production/scripts.min.js': ['application/webroot/js/production/scripts.js']
+				'js/production/scripts.min.js': ['js/production/scripts.js']
 				}
 			}
 		},
@@ -30,9 +27,9 @@ module.exports = function(grunt) {
 			dist: {
 				files: [{
 					expand: true,
-					cwd: 'application/webroot/scss',
+					cwd: 'scss',
 					src: ['*.scss'],
-					dest: 'application/webroot/css',
+					dest: 'css',
 					ext: '.css'
 				}]
 			}
@@ -40,14 +37,14 @@ module.exports = function(grunt) {
 
 		watch: {	
 		    scripts: {
-		        files: ['application/webroot/js/*.js'],
+		        files: ['js/*.js'],
 		        tasks: ['concat'],
 		        options: {
 		            spawn: false
 		        },
 		    },			
 			sass: {
-			    files: ['application/webroot/scss/*.scss'],
+			    files: ['scss/*.scss'],
 			    tasks: ['sass'],
 			    options: {
 			        spawn: false,
