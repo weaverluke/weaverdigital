@@ -48,7 +48,8 @@ a {
 .container-outer {
   display: table;
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 150px; }
   .container-outer.is-splash {
     background: #fff;
     z-index: 1; }
@@ -69,6 +70,9 @@ a {
   height: 100%;
   display: table-cell;
   vertical-align: middle; }
+  .container.container-bottom {
+    vertical-align: bottom;
+    padding-bottom: 100px; }
 
 .lt-ie8 .container-outer {
   padding-top: 83px;
@@ -90,8 +94,39 @@ a {
       padding: 0; } }
   .lt-ie9 .content {
     padding: 0; }
-  .content > p {
+  .content p {
     margin: 0 0 1em; }
+    .content p.content-expand {
+      margin-top: 40px;
+      text-align: center; }
+      .content p.content-expand > a {
+        display: inline-block;
+        border: 1px solid #999999;
+        padding: .5em 2em;
+        border-radius: 5px;
+        font-size: 16px;
+        color: #666; }
+    .content p.is-hidden {
+      overflow: hidden;
+      height: 40px;
+      opacity: 0;
+      margin: 0; }
+  .content dl {
+    margin: 0;
+    padding: 0; }
+    .content dl > dt {
+      margin: 0 0 1em; }
+    .content dl > dd {
+      margin: 0 0 1em; }
+
+.is-collapsed {
+  transition: opacity 0.6s 0.3s;
+  height: 0;
+  opacity: 0; }
+
+.is-expanded {
+  height: auto;
+  opacity: 1; }
 
 .footer-bar {
   height: 2px;
@@ -110,6 +145,7 @@ a {
   top: 0;
   width: 100%;
   border-bottom: 1px solid #e9e9ea;
+  z-index: 1;
   margin: 0;
   padding: 0; }
   .global-nav > li {
@@ -127,6 +163,11 @@ a {
           padding: 17px 7px 0; } }
       .lt-ie9 .global-nav > li > a {
         padding: 17px 7px 0; }
+      @media screen and (min-width: 768px) {
+        .global-nav > li > a {
+          font-size: 18px; } }
+      .lt-ie9 .global-nav > li > a {
+        font-size: 18px; }
       @media screen and (min-width: 960px) {
         .global-nav > li > a:hover {
           color: #d92128; } }
@@ -150,7 +191,10 @@ a {
         display: block;
         text-indent: -9999px;
         background-position: center;
-        min-width: 0;
+        min-width: 0; }
+      .global-nav > li:first-child > .icon-logo-small {
+        width: 101px; }
+      .global-nav > li:first-child > .icon-logo-w {
         width: 23px; }
     .global-nav > li:last-child > a {
       margin: 0 5px 0 0; }

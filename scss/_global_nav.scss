@@ -7,6 +7,7 @@
 	top:0;
 	width:100%;
 	border-bottom:1px solid #e9e9ea;
+	z-index:1;
 	@include reset-margins;
 	
 	> li{
@@ -23,6 +24,10 @@
 
 			@include respond(small){
 				padding:17px 7px 0;
+			}
+			
+			@include respond(medium){
+				font-size:18px;
 			}
 			
 			&:hover{
@@ -59,6 +64,13 @@
 				text-indent: -9999px;
 				background-position:center;
 				min-width:0;
+			}
+			
+			> .icon-logo-small{
+				width:101px;
+			}
+			
+			> .icon-logo-w{
 				width:23px;
 			}
 		}
