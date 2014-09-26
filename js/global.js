@@ -43,16 +43,18 @@ var scrollTransitions = {
 }
 
 var collapsedContent = {
+	isPinned:false,
 	init:function(){
 		$('.content-expand > a').click(function(e){
 			e.preventDefault();
-			$(this).parent('p').addClass('is-hidden').next('.is-collapsed').addClass('is-expanded');
 			
-			anchor = $(this).data('scroll');		
-			if (typeof anchor != 'undefined'){				
-				offset = $(anchor).offset().top - 83;				
-//				$('html, body').animate({scrollTop:offset}, 300);
+			if(!collapsedContent.isPinned){	// pin the position of the valigned .content div
+				var pixelsFromTop = $('.content').offset().top - $('#About').offset().top;
+				$('.content').css('margin-top',pixelsFromTop);							
+				collapsedContent.isPinned = true;
 			}
+			
+			$(this).parent('p').addClass('is-hidden').next('.is-collapsed').addClass('is-expanded');
 		});
 	}
 }

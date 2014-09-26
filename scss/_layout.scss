@@ -36,6 +36,10 @@
 	&.is-hidden{
 		opacity:0;
 	}
+	
+	&.container-outer-last{
+		margin-bottom:0;
+	}
 }
 
 .is-fixed{
@@ -53,9 +57,9 @@
 	display:table-cell;
 	vertical-align:middle;
 	
-	&.container-bottom{
+	&.container-last{
 		vertical-align:bottom;
-		padding-bottom:100px;		
+		padding-bottom:100px;
 	}
 }
 
