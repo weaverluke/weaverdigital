@@ -1,3 +1,5 @@
+$('.global-nav').addClass('is-hidden');	// hide the nav
+
 var navScroll = {
 	links:null,
 	toplinks:null,
@@ -31,7 +33,7 @@ var navScroll = {
 
 var scrollTransitions = {
 	init:function(){
-		$('.global-nav').addClass('is-hidden');	// hide the nav
+//		$('.global-nav').addClass('is-hidden');	// hide the nav
 	
 		$(window).scroll(function(){						
 			if($(window).scrollTop() > 0)
