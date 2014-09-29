@@ -10,14 +10,17 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
 		<link rel="stylesheet" href="/css/style.css" type="text/css" />	
 		<script src="/js/production/scripts.js" async="async"></script>
-		<noscript><link href="/img/grunticon/icons.fallback.css" rel="stylesheet" /></noscript>
+		<noscript>
+			<link href="/img/grunticon/icons.fallback.css" rel="stylesheet" />
+			<style>.global-nav.is-hidden{opacity:1;}</style>
+		</noscript>
 </head>
 <body data-spy="scroll" data-target=".global-nav-container" data-offset="84">
 	
 	<nav>
 		<div class="global-nav-container">
-			<ul class="global-nav nav">
-				<li><a class="icon-logo-small icon-logo-w" href="#Logo" data-scroll="#Logo">Home</a></li>
+			<ul class="global-nav is-hidden">
+				<li><a class="icon-logo-small icon-logo-w" href="#Splash" data-scroll="#Splash">Home</a></li>
 				<li><a href="#About" data-scroll="#About">About</a></li>
 				<li><a href="#Clients" data-scroll="#Clients">Clients</a></li>
 				<li><a href="#Contact" data-scroll="#Contact">Contact</a></li>
@@ -25,7 +28,7 @@
 		</div>
 	</nav>
 	
-	<div class="container-outer" id="Logo">
+	<div class="container-outer" id="Splash">
 		<div class="container">
 			<div class="splash">
 				<header>
