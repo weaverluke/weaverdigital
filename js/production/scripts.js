@@ -54,6 +54,8 @@ var scrollTransitions = {
 var collapsedContent = {
 	isPinned:false,
 	init:function(){
+		$('.content-expand').removeClass('is-hidden');	// show toggle links
+		$('.content-expand').next('div').addClass('is-collapsed');	// collapse toggle content
 		$('.content-expand > a').click(function(e){
 			e.preventDefault();
 			

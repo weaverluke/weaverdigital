@@ -3,11 +3,8 @@
 .global-nav{
 	background:#fbfbfb;
 	text-align:right;
-	position:fixed;
-	top:0;
-	width:100%;
 	border-bottom:1px solid #e9e9ea;
-	z-index:1;
+	overflow:hidden;
 	@include reset-margins;
 	
 	> li{
@@ -88,5 +85,13 @@
 	
 	&.is-hidden{
 		opacity:0;
+		height:0;
+	}
+	
+	&.is-fixed{
+		position:fixed;
+		width:100%;
+		z-index:1;
+		top:0;		
 	}
 }

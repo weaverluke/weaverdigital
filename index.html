@@ -12,14 +12,14 @@
 		<script src="/js/production/scripts.js" async="async"></script>
 		<noscript>
 			<link href="/img/grunticon/icons.fallback.css" rel="stylesheet" />
-			<style>.global-nav.is-hidden{opacity:1;}</style>
+			<style>.global-nav.is-hidden{opacity:1;position:static;height:auto;}</style>
 		</noscript>
 </head>
 <body data-spy="scroll" data-target=".global-nav-container" data-offset="84">
 	
 	<nav>
 		<div class="global-nav-container">
-			<ul class="global-nav nav is-hidden">
+			<ul class="global-nav nav is-hidden is-fixed">
 				<li><a class="icon-logo-small icon-logo-w" href="#Splash" data-scroll="#Splash">Home</a></li>
 				<li><a href="#About" data-scroll="#About">About</a></li>
 				<li><a href="#Clients" data-scroll="#Clients">Clients</a></li>
@@ -46,9 +46,9 @@
 					
 					<p>Weaver’s founder Luke Razzell  leads every project, collaborating with virtualised teams of handpicked associates.</p>		
 					
-					<p class="content-expand"><a href="#WhatWeDo" data-scroll="#WhatWeDo">What we do</a></p>
+					<p class="content-expand is-hidden"><a href="#WhatWeDo" data-scroll="#WhatWeDo">What we do</a></p>
 					
-					<div class="is-collapsed" id="WhatWeDo">
+					<div id="WhatWeDo">
 						<p><strong>What we do</strong></p>
 						
 						<dl>
@@ -61,9 +61,9 @@
 							<dd>Analytics and solution optimisation</dd>
 						</dl>
 						
-						<p class="content-expand"><a href="#OurSectors" data-scroll="#OurSectors">Our specialist sectors</a></p>
+						<p class="content-expand is-hidden"><a href="#OurSectors" data-scroll="#OurSectors">Our specialist sectors</a></p>
 					
-						<div class="is-collapsed" id="OurSectors">
+						<div id="OurSectors">
 							<p><strong>Our specialist sectors</strong></p>
 								
 							<dl>
@@ -77,9 +77,9 @@
 								<dd>Social networks</dd>
 							</dl>
 							
-							<p class="content-expand"><a href="#OurPromise" data-scroll="#OurPromise">Our promise</a></p>
+							<p class="content-expand is-hidden"><a href="#OurPromise" data-scroll="#OurPromise">Our promise</a></p>
 					
-							<div class="is-collapsed" id="OurPromise">
+							<div id="OurPromise">
 								
 								<p><strong>Our promise</strong></p>
 								
