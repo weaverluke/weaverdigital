@@ -118,11 +118,11 @@ a {
     font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
 
 .is-collapsed {
-  transition: opacity 0.6s 0.3s;
   height: 0;
   opacity: 0; }
 
 .is-expanded {
+  transition: opacity 0.6s 0.3s;
   margin-top: -40px;
   height: auto;
   opacity: 1; }
