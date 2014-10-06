@@ -41,12 +41,18 @@ var navScroll = {
 }
 
 var scrollTransitions = {
+	isScrolled:false,
 	init:function(){
 		$(window).scroll(function(){						
 			if($(window).scrollTop() > 0)
 				$('.global-nav').addClass('is-transition').removeClass('is-hidden');			
 			else
 				$('.global-nav').addClass('is-transition').addClass('is-hidden');			
+				
+			if(!scrollTransitions.isScrolled){
+				_gaq.push(['_trackEvent', 'UI', 'Initial Scroll']);	// track a scroll
+				scrollTransitions.isScrolled = true;
+			}			
 		});		
 	}
 }
@@ -66,6 +72,7 @@ var collapsedContent = {
 			}
 			
 			$(this).parent('p').addClass('is-hidden').next('.is-collapsed').addClass('is-expanded');
+			_gaq.push(['_trackEvent', 'UI', 'Button - Inline Expand', $(this).data('scroll')]);	// track an inline expand
 		});
 	}
 }
