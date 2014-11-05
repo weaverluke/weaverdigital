@@ -114,7 +114,7 @@ a {
     .content p.content-large {
       font-size: 22px;
       font-weight: 300;
-      color: #999;
+      color: #666;
       margin: 20px 0 60px; }
     .content p.content-larger {
       font-size: 30px;
@@ -239,7 +239,12 @@ a {
   ------------------------------------------- */
 .testimonials {
   margin: auto;
-  max-width: 410px; }
+  max-width: 450px; }
+  @media screen and (min-width: 960px) {
+    .testimonials {
+      max-width: 410px; } }
+  .lt-ie9 .testimonials {
+    max-width: 410px; }
   .testimonials > blockquote {
     margin: 0;
     padding: 0;

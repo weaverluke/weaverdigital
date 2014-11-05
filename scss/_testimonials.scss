@@ -2,9 +2,14 @@
   ------------------------------------------- */
 .testimonials{
 	margin:auto;
-	max-width:410px;
+	max-width:450px;
+	
+	@include respond(large){
+		max-width:410px;
+	}
 	
 	> blockquote{
+		
 		@include reset-margins;
 		padding:0 20px 40px;
 		
