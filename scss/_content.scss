@@ -8,7 +8,15 @@
 	@include respond(large){
 		padding:0;
 	}
-			
+	
+	h1{
+		font:{
+			size:34px;
+			weight:300;
+		};
+		margin:0;
+	}
+	
 	p{
 		margin:0 0 1em;
 		
@@ -33,6 +41,28 @@
 			opacity:0;
 //			margin:0;
 		}
+		
+		&.content-large{
+			font:{
+				size:22px;
+				weight:300;
+			};		
+			color:#999;
+			margin:20px 0 60px;
+		}
+		
+		&.content-larger{
+			font:{
+				size:30px;
+				weight:300;
+			};		
+			color:#999;
+			margin:0 0 100px;
+			
+			> a{
+				color:$red;
+			}
+		}
 	}
 	
 	dl{
@@ -49,6 +79,10 @@
 	strong{
 		font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 	}
+}
+
+.content-page{
+	padding-top:83px;
 }
 
 .is-collapsed{

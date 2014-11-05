@@ -90,6 +90,10 @@ a {
       padding: 0; } }
   .lt-ie9 .content {
     padding: 0; }
+  .content h1 {
+    font-size: 34px;
+    font-weight: 300;
+    margin: 0; }
   .content p {
     margin: 0 0 1em; }
     .content p.content-expand {
@@ -107,6 +111,18 @@ a {
       overflow: hidden;
       height: 40px;
       opacity: 0; }
+    .content p.content-large {
+      font-size: 22px;
+      font-weight: 300;
+      color: #999;
+      margin: 20px 0 60px; }
+    .content p.content-larger {
+      font-size: 30px;
+      font-weight: 300;
+      color: #999;
+      margin: 0 0 100px; }
+      .content p.content-larger > a {
+        color: #d92128; }
   .content dl {
     margin: 0;
     padding: 0; }
@@ -116,6 +132,9 @@ a {
       margin: 0 0 1em; }
   .content strong {
     font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+
+.content-page {
+  padding-top: 83px; }
 
 .is-collapsed {
   height: 0;
