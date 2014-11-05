@@ -123,6 +123,8 @@ a {
       margin: 0 0 100px; }
       .content p.content-larger > a {
         color: #d92128; }
+    .content p.content-centered {
+      text-align: center; }
   .content dl {
     margin: 0;
     padding: 0; }
