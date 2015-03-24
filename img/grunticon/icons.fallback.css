@@ -1,78 +1,85 @@
- 
-.icon-blinkbox {
-	background-image: url('/img/grunticon//blinkbox.png');
+
+.icon-logo-new {
+	background-image: url('png/logo-new.png');
 	background-repeat: no-repeat;
 }
 
- 
-.icon-call-credit {
-	background-image: url('/img/grunticon//call-credit.png');
+.icon-vitesse {
+	background-image: url('png/vitesse.png');
 	background-repeat: no-repeat;
 }
 
- 
-.icon-financial-times {
-	background-image: url('/img/grunticon//financial-times.png');
+.icon-tui {
+	background-image: url('png/tui.png');
 	background-repeat: no-repeat;
 }
 
- 
-.icon-honda {
-	background-image: url('/img/grunticon//honda.png');
+.icon-timeout {
+	background-image: url('png/timeout.png');
 	background-repeat: no-repeat;
 }
 
- 
-.icon-logo-small {
-	background-image: url('/img/grunticon//logo-small.png');
-	background-repeat: no-repeat;
-}
-
- 
-.icon-logo-w {
-	background-image: url('/img/grunticon//logo-w.png');
-	background-repeat: no-repeat;
-}
-
- 
 .icon-logo {
-	background-image: url('/img/grunticon//logo.png');
+	background-image: url('png/logo.png');
 	background-repeat: no-repeat;
 }
 
- 
+.icon-logo-small {
+	background-image: url('png/logo-small.png');
+	background-repeat: no-repeat;
+}
+
+.icon-blinkbox {
+	background-image: url('png/blinkbox.png');
+	background-repeat: no-repeat;
+}
+
+.icon-call-credit {
+	background-image: url('png/call-credit.png');
+	background-repeat: no-repeat;
+}
+
+.icon-financial-times {
+	background-image: url('png/financial-times.png');
+	background-repeat: no-repeat;
+}
+
+.icon-honda {
+	background-image: url('png/honda.png');
+	background-repeat: no-repeat;
+}
+
+.icon-logo-w {
+	background-image: url('png/logo-w.png');
+	background-repeat: no-repeat;
+}
+
 .icon-tfl {
-	background-image: url('/img/grunticon//tfl.png');
+	background-image: url('png/tfl.png');
 	background-repeat: no-repeat;
 }
 
- 
 .icon-thomson-reuters {
-	background-image: url('/img/grunticon//thomson-reuters.png');
+	background-image: url('png/thomson-reuters.png');
 	background-repeat: no-repeat;
 }
 
- 
 .icon-vodafone {
-	background-image: url('/img/grunticon//vodafone.png');
+	background-image: url('png/vodafone.png');
 	background-repeat: no-repeat;
 }
 
- 
 .icon-which {
-	background-image: url('/img/grunticon//which.png');
+	background-image: url('png/which.png');
 	background-repeat: no-repeat;
 }
 
- 
 .icon-worldpay {
-	background-image: url('/img/grunticon//worldpay.png');
+	background-image: url('png/worldpay.png');
 	background-repeat: no-repeat;
 }
 
- 
 .icon-zurich {
-	background-image: url('/img/grunticon//zurich.png');
+	background-image: url('png/zurich.png');
 	background-repeat: no-repeat;
 }
-
