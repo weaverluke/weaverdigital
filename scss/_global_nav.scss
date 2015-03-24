@@ -34,6 +34,12 @@
 			}
 		}
 		
+		&:nth-child(3){
+			> a{
+				padding-right:12px;
+			}
+		}
+		
 		&.active{
 			> a{
 				font:{
