@@ -1,4 +1,9 @@
 
+.icon-vodafone {
+	background-image: url('png/vodafone.png');
+	background-repeat: no-repeat;
+}
+
 .icon-vitesse {
 	background-image: url('png/vitesse.png');
 	background-repeat: no-repeat;
@@ -46,11 +51,6 @@
 
 .icon-thomson-reuters {
 	background-image: url('png/thomson-reuters.png');
-	background-repeat: no-repeat;
-}
-
-.icon-vodafone {
-	background-image: url('png/vodafone.png');
 	background-repeat: no-repeat;
 }
 
