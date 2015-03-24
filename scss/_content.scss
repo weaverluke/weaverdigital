@@ -17,6 +17,16 @@
 		margin:0;
 	}
 	
+	h2{
+		font-size: 48px;
+		font-weight: 100;
+		line-height: 1.1;
+		
+		@include respond(large){
+			font-size: 56px;
+		}
+	}
+	
 	p{
 		margin:0 0 1em;
 		
@@ -92,6 +102,7 @@
 .is-collapsed{
 	height:0;
 	opacity:0;	
+	visibility:hidden;
 }
 
 .is-expanded{
@@ -99,4 +110,5 @@
 	margin-top:-40px;
 	height:auto;
 	opacity:1;
+	visibility:visible;
 }

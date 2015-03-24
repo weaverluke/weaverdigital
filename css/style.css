@@ -20,7 +20,7 @@ img {
 a {
   outline: none;
   text-decoration: none;
-  color: #666; }
+  color: #000; }
   a:hover, a:active {
     color: #d92128; }
 
@@ -103,6 +103,15 @@ a {
     font-size: 34px;
     font-weight: 300;
     margin: 0; }
+  .content h2 {
+    font-size: 48px;
+    font-weight: 100;
+    line-height: 1.1; }
+    @media screen and (min-width: 960px) {
+      .content h2 {
+        font-size: 56px; } }
+    .lt-ie9 .content h2 {
+      font-size: 56px; }
   .content p {
     margin: 0 0 1em; }
     .content p.content-expand {
@@ -149,13 +158,15 @@ a {
 
 .is-collapsed {
   height: 0;
-  opacity: 0; }
+  opacity: 0;
+  visibility: hidden; }
 
 .is-expanded {
   transition: opacity 0.6s 0.3s;
   margin-top: -40px;
   height: auto;
-  opacity: 1; }
+  opacity: 1;
+  visibility: visible; }
 
 .footer-bar {
   height: 2px;
