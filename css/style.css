@@ -214,10 +214,17 @@ a {
         text-indent: -9999px;
         background-position: center;
         min-width: 0; }
-      .global-nav > li:first-child > .icon-logo-small {
-        width: 101px; }
       .global-nav > li:first-child > .icon-logo-w {
         width: 23px; }
+      @media screen and (min-width: 768px) {
+        .global-nav > li:first-child > .icon-logo-small {
+          background-image: url("/img/logo-@2x.png");
+          background-size: 100% auto;
+          width: 101px; } }
+      .lt-ie9 .global-nav > li:first-child > .icon-logo-small {
+        background-image: url("/img/logo-@2x.png");
+        background-size: 100% auto;
+        width: 101px; }
     .global-nav > li:last-child > a {
       margin: 0 5px 0 0; }
   .global-nav.is-transition {
@@ -238,8 +245,11 @@ a {
   white-space: nowrap;
   overflow: hidden;
   width: 201px;
-  height: 83px;
   margin: auto; }
+
+.icon-logo-png {
+  background: url("/img/logo-@2x.png") no-repeat 0 -22px;
+  background-size: 100% auto; }
 
 /*	testimonials
   ------------------------------------------- */

@@ -63,12 +63,16 @@
 				min-width:0;
 			}
 			
-			> .icon-logo-small{
-				width:101px;
-			}
-			
 			> .icon-logo-w{
 				width:23px;
+			}
+			
+			> .icon-logo-small{
+				@include respond(medium){
+					background-image: url('/img/logo-@2x.png');
+					background-size:100% auto;
+					width: 101px;
+				}
 			}
 		}
 		

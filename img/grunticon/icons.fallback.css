@@ -1,9 +1,4 @@
 
-.icon-logo-new {
-	background-image: url('png/logo-new.png');
-	background-repeat: no-repeat;
-}
-
 .icon-vitesse {
 	background-image: url('png/vitesse.png');
 	background-repeat: no-repeat;
@@ -16,16 +11,6 @@
 
 .icon-timeout {
 	background-image: url('png/timeout.png');
-	background-repeat: no-repeat;
-}
-
-.icon-logo {
-	background-image: url('png/logo.png');
-	background-repeat: no-repeat;
-}
-
-.icon-logo-small {
-	background-image: url('png/logo-small.png');
 	background-repeat: no-repeat;
 }
 
