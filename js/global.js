@@ -68,9 +68,6 @@ var collapsedContent = {
 
 $(function(){
 	
-//	if($(window).width()>=768)
-//		$('.icon-logo-w').removeClass('icon-logo-w');	// full logo for larger viewports
-	
 	if($('#Splash').length){
 		navScroll.init();	
 		scrollTransitions.init();
