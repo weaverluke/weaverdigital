@@ -1,3 +1,21 @@
+/* fonts
+
+font-family:'HelveticaNeueW01-UltLt';
+font-family:'HelveticaNeueW01-Thin';
+font-family:'HelveticaNeueW01-45Ligh';
+font-family:'HelveticaNeueW01-65Medi';
+font-family:'HelveticaNeueW01-75Bold';
+
+*/
+/* fonts
+
+font-family:'HelveticaNeueW01-UltLt';
+font-family:'HelveticaNeueW01-Thin';
+font-family:'HelveticaNeueW01-45Ligh';
+font-family:'HelveticaNeueW01-65Medi';
+font-family:'HelveticaNeueW01-75Bold';
+
+*/
 html {
   height: 100%; }
 
@@ -5,8 +23,7 @@ body {
   height: 100%;
   color: #666;
   margin: 0;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 300;
+  font-family: "HelveticaNeueW01-45Ligh", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 20px;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -23,6 +40,10 @@ a {
   color: #000; }
   a:hover, a:active {
     color: #d92128; }
+
+strong {
+  font-family: 'HelveticaNeueW01-65Medi';
+  font-weight: normal; }
 
 /*	grid
   ------------------------------------------- */
@@ -101,11 +122,10 @@ a {
     padding: 0; }
   .content h1 {
     font-size: 34px;
-    font-weight: 300;
     margin: 0; }
   .content h2 {
     font-size: 48px;
-    font-weight: 100;
+    font-family: 'HelveticaNeueW01-UltLt';
     line-height: 1.1; }
     @media screen and (min-width: 960px) {
       .content h2 {
@@ -131,12 +151,10 @@ a {
       opacity: 0; }
     .content p.content-large {
       font-size: 22px;
-      font-weight: 300;
       color: #666;
       margin: 20px 0 60px; }
     .content p.content-larger {
       font-size: 30px;
-      font-weight: 300;
       color: #999;
       margin: 75px 0 25px; }
       .content p.content-larger > a {
@@ -213,8 +231,7 @@ a {
     .global-nav > li:nth-child(3) > a {
       padding-right: 11px; }
     .global-nav > li.active > a {
-      font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-      font-weight: 400; }
+      font-family: 'HelveticaNeueW01-65Medi'; }
       .global-nav > li.active > a:hover {
         color: #666; }
         @media screen and (min-width: 960px) {

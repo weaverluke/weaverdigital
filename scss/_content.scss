@@ -12,14 +12,13 @@
 	h1{
 		font:{
 			size:34px;
-			weight:300;
 		};
 		margin:0;
 	}
 	
 	h2{
 		font-size: 48px;
-		font-weight: 100;
+		font-family:'HelveticaNeueW01-UltLt';
 		line-height: 1.1;
 		
 		@include respond(large){
@@ -55,7 +54,6 @@
 		&.content-large{
 			font:{
 				size:22px;
-				weight:300;
 			};		
 			color:#666;
 			margin:20px 0 60px;
@@ -64,7 +62,6 @@
 		&.content-larger{
 			font:{
 				size:30px;
-				weight:300;
 			};		
 			color:#999;
 			margin:75px 0 25px;

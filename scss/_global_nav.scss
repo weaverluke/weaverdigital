@@ -41,11 +41,8 @@
 		}
 		
 		&.active{
-			> a{
-				font:{
-					family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-					weight: 400;
-				};
+			> a{				
+				font-family:'HelveticaNeueW01-65Medi';
 				
 				&:hover{
 					color:$grey;

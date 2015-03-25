@@ -9,8 +9,7 @@ body{
 	color:#666;
 	margin:0;
 	font:{
-		family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-		weight: 300;
+		family: "HelveticaNeueW01-45Ligh", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 		size:20px;
 	};
 	-webkit-text-size-adjust: 100%;
@@ -34,4 +33,9 @@ a{
 	&:hover, &:active{
 		color:$red;
 	}
+}
+
+strong{
+	font-family:'HelveticaNeueW01-65Medi';
+	font-weight:normal;
 }
