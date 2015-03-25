@@ -26,7 +26,6 @@ body {
   font-family: "HelveticaNeueW01-45Ligh", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 20px;
   -webkit-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
   position: relative; }
   body.is-splash {
     padding-top: 200%; }
@@ -126,6 +125,7 @@ strong {
   .content h2 {
     font-size: 48px;
     font-family: 'HelveticaNeueW01-UltLt';
+    font-weight: normal;
     line-height: 1.1; }
     @media screen and (min-width: 960px) {
       .content h2 {

@@ -19,6 +19,7 @@
 	h2{
 		font-size: 48px;
 		font-family:'HelveticaNeueW01-UltLt';
+		font-weight:normal;
 		line-height: 1.1;
 		
 		@include respond(large){
