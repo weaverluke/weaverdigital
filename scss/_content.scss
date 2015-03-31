@@ -34,7 +34,7 @@
 		&.content-expand{
 			margin-top:40px;
 			text-align:center;
-			transition:opacity 0.3s;
+			transition:opacity 0.3s, visibility 0s 0.3s;
 			
 			> a{
 				display:inline-block;
@@ -47,8 +47,7 @@
 		}
 		
 		&.is-hidden{
-			overflow:hidden;
-			height:40px;
+			visibility:hidden;
 			opacity:0;
 		}
 		

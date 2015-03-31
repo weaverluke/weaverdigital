@@ -38,6 +38,7 @@ body {
   font-family: "HelveticaNeueW01-45Ligh", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 20px;
   -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
   position: relative; }
   body.is-splash {
     padding-top: 200%; }
@@ -150,7 +151,7 @@ strong {
     .content p.content-expand {
       margin-top: 40px;
       text-align: center;
-      transition: opacity 0.3s; }
+      transition: opacity 0.3s, visibility 0s 0.3s; }
       .content p.content-expand > a {
         display: inline-block;
         border: 1px solid #999;
@@ -159,8 +160,7 @@ strong {
         font-size: 16px;
         color: #666; }
     .content p.is-hidden {
-      overflow: hidden;
-      height: 40px;
+      visibility: hidden;
       opacity: 0; }
     .content p.content-large {
       font-size: 22px;
