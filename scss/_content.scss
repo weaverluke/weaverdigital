@@ -97,6 +97,10 @@
 	height:0;
 	opacity:0;	
 	visibility:hidden;
+	
+	> h2, dl, p, div{
+		display:none;
+	}
 }
 
 .is-expanded{
@@ -105,4 +109,8 @@
 	height:auto;
 	opacity:1;
 	visibility:visible;
+	
+	> h2, dl, p, div{
+		display:block;
+	}
 }

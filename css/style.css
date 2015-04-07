@@ -190,6 +190,8 @@ strong {
   height: 0;
   opacity: 0;
   visibility: hidden; }
+  .is-collapsed > h2, .is-collapsed dl, .is-collapsed p, .is-collapsed div {
+    display: none; }
 
 .is-expanded {
   transition: opacity 0.6s 0.3s;
@@ -197,6 +199,8 @@ strong {
   height: auto;
   opacity: 1;
   visibility: visible; }
+  .is-expanded > h2, .is-expanded dl, .is-expanded p, .is-expanded div {
+    display: block; }
 
 .footer-bar {
   height: 2px;
