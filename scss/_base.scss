@@ -30,7 +30,7 @@ a{
 	text-decoration:none;
 	color:#000;
 	
-	&:hover, &:active{
+	&:hover, &:active, &.red{
 		color:$red;
 	}
 }

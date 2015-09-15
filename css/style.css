@@ -50,7 +50,7 @@ a {
   outline: none;
   text-decoration: none;
   color: #000; }
-  a:hover, a:active {
+  a:hover, a:active, a.red {
     color: #d92128; }
 
 strong {
@@ -142,8 +142,10 @@ strong {
     line-height: 1.1; }
     @media screen and (min-width: 960px) {
       .content h2 {
+        white-space: nowrap;
         font-size: 56px; } }
     .lt-ie9 .content h2 {
+      white-space: nowrap;
       font-size: 56px; }
   .content p {
     margin: 0 0 1em;
@@ -182,6 +184,12 @@ strong {
     .content dl > dd {
       margin: 0 0 1em;
       line-height: 1.5; }
+  .content img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 330px;
+    margin: 0 auto 70px; }
 
 .content-page {
   padding-top: 83px; }

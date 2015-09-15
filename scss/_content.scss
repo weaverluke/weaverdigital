@@ -23,6 +23,7 @@
 		line-height: 1.1;
 		
 		@include respond(large){
+			white-space:nowrap;
 			font-size: 56px;
 		}
 	}
@@ -86,6 +87,14 @@
 			margin:0 0 1em;		
 			line-height:1.5;	
 		}
+	}
+	
+	img{
+		display:block;
+		width:100%;
+		height:auto;
+		max-width:330px;
+		margin:0 auto 70px;
 	}
 }
 
