@@ -190,6 +190,8 @@ strong {
     height: auto;
     max-width: 330px;
     margin: 0 auto 70px; }
+    .content img.content-full {
+      max-width: none; }
 
 .content-page {
   padding-top: 83px; }
