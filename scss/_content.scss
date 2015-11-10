@@ -74,6 +74,10 @@
 		
 		&.content-centered{
 			text-align:center;
+			
+			&.smaller{
+				font-size:16px;
+			}
 		}
 	}
 	
@@ -99,6 +103,39 @@
 		&.content-full{
 			max-width:none;
 		}
+	}
+	
+	input[type="text"], input[type="email"]{
+		box-sizing:border-box;
+		width:100%;
+		font-size:16px;
+		padding:10px;
+		color:$grey;
+	}
+	
+	button{
+		@include reset-margins;
+		box-sizing:border-box;
+		-webkit-appearance:none;
+		text-align:center;
+		display:block;
+		margin:3em auto;
+		border:1px solid $light-grey;
+		padding:.5em 2em;
+		border-radius:5px;
+		background:none;
+		color:$grey;		
+		cursor:pointer;
+		font:{
+			family: inherit;
+			size:16px;
+		};
+	}
+	
+	label{
+		margin:0 0 1em;
+		display:block;
+		line-height:1.5;
 	}
 }
 

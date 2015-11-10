@@ -176,6 +176,8 @@ strong {
         color: #d92128; }
     .content p.content-centered {
       text-align: center; }
+      .content p.content-centered.smaller {
+        font-size: 16px; }
   .content dl {
     margin: 0;
     padding: 0; }
@@ -192,6 +194,32 @@ strong {
     margin: 0 auto 70px; }
     .content img.content-full {
       max-width: none; }
+  .content input[type="text"], .content input[type="email"] {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    color: #666; }
+  .content button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    text-align: center;
+    display: block;
+    margin: 3em auto;
+    border: 1px solid #999;
+    padding: .5em 2em;
+    border-radius: 5px;
+    background: none;
+    color: #666;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px; }
+  .content label {
+    margin: 0 0 1em;
+    display: block;
+    line-height: 1.5; }
 
 .content-page {
   padding-top: 83px; }
