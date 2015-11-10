@@ -160,7 +160,9 @@ strong {
         padding: .5em 2em;
         border-radius: 5px;
         font-size: 16px;
-        color: #666; }
+        color: #2b2b2b; }
+        .content p.content-expand > a:hover {
+          color: #d92128; }
     .content p.is-hidden {
       visibility: hidden;
       opacity: 0; }
@@ -213,10 +215,12 @@ strong {
     padding: .5em 2em;
     border-radius: 5px;
     background: none;
-    color: #666;
+    color: #2b2b2b;
     cursor: pointer;
     font-family: inherit;
     font-size: 16px; }
+    .content button:hover {
+      color: #d92128; }
   .content label {
     margin: 0 0 10px;
     display: block;
