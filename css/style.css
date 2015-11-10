@@ -193,7 +193,8 @@ strong {
     max-width: 330px;
     margin: 0 auto 70px; }
     .content img.content-full {
-      max-width: none; }
+      max-width: none;
+      margin-top: 50px; }
   .content input[type="text"], .content input[type="email"] {
     box-sizing: border-box;
     width: 100%;
