@@ -74,12 +74,18 @@ var collapsedContent = {
 		$('.content-expand').next('div').addClass('is-collapsed');	// collapse toggle content
 		$('.content-expand > a').click(function(e){
 			e.preventDefault();
+				
+//			if(!collapsedContent.isPinned)	{
+				// pin vertical position of About panel
+				var pixelsFromTop = $('#About .content').offset().top - $('#About').offset().top;
+				$('#About .content').css('margin-top',pixelsFromTop);
+						
+				// pin vertical position of launchpad panel
+				var launchpadPixelsFromTop = $('#DesignLaunchpad .content').offset().top - $('#DesignLaunchpad').offset().top;
+				$('#DesignLaunchpad .content').css('margin-top',launchpadPixelsFromTop);
 			
-			if(!collapsedContent.isPinned){	// pin the position of the valigned .content div
-				var pixelsFromTop = $('.content').offset().top - $('#About').offset().top;
-				$('.content').css('margin-top',pixelsFromTop);							
-				collapsedContent.isPinned = true;
-			}
+//				collapsedContent.isPinned = true;
+//			}
 			
 			$(this).parent('p').addClass('is-hidden').next('.is-collapsed').addClass('is-expanded');
 			_gaq.push(['_trackEvent', 'UI', 'Button - Inline Expand', $(this).data('scroll')]);	// track an inline expand
