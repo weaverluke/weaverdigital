@@ -1,4 +1,9 @@
 
+.icon-chevron-down {
+	background-image: url('png/chevron-down.png');
+	background-repeat: no-repeat;
+}
+
 .icon-tui {
 	background-image: url('png/tui.png');
 	background-repeat: no-repeat;

@@ -64,8 +64,22 @@ strong {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin: auto;
-  max-width: 410px; }
+  margin: auto; }
+
+@media screen and (min-width: 480px) {
+  .grid-2-up {
+    float: left;
+    width: 50%; } }
+.lt-ie9 .grid-2-up {
+  float: left;
+  width: 50%; }
+@media screen and (min-width: 480px) {
+  .grid-2-up.gutter {
+    box-sizing: border-box;
+    padding-left: 60px; } }
+.lt-ie9 .grid-2-up.gutter {
+  box-sizing: border-box;
+  padding-left: 60px; }
 
 .grid > li {
   margin: 0 0 40px; }
@@ -103,10 +117,36 @@ strong {
   .container.container-last {
     vertical-align: bottom;
     padding-bottom: 100px; }
+  .container.container-top {
+    vertical-align: top; }
 
 .lt-ie8 .container-outer {
   padding-top: 83px;
   height: auto; }
+
+.article-image {
+  width: 90.625%;
+  margin: auto;
+  display: block;
+  max-width: 361px; }
+
+.article-main {
+  max-width: 275px;
+  margin: 20px; }
+  .article-main h1 {
+    font-family: "HelveticaNeueW01-UltLt";
+    font-size: 55px;
+    font-weight: normal;
+    line-height: 1.1;
+    margin: 25px 0; }
+  .article-main p {
+    margin: 0;
+    line-height: 1.5; }
+    @media screen and (min-width: 480px) {
+      .article-main p {
+        margin: 0 0 1em; } }
+    .lt-ie9 .article-main p {
+      margin: 0 0 1em; }
 
 .client {
   text-indent: -9999px;
@@ -124,9 +164,7 @@ strong {
 /*	content (standard copy styles)
   ------------------------------------------- */
 .content {
-  padding: 0 20px;
-  max-width: 410px;
-  margin: auto; }
+  padding: 0 20px; }
   @media screen and (min-width: 960px) {
     .content {
       padding: 0; } }
@@ -135,6 +173,18 @@ strong {
   .content h1 {
     font-size: 34px;
     margin: 0; }
+    .content h1.content-article-heading {
+      font-family: "HelveticaNeueW01-UltLt";
+      font-size: 55px;
+      font-weight: normal;
+      line-height: 1.1;
+      max-width: 275px;
+      margin: 25px 0; }
+      @media screen and (min-width: 960px) {
+        .content h1.content-article-heading {
+          margin: 235px 0 25px; } }
+      .lt-ie9 .content h1.content-article-heading {
+        margin: 235px 0 25px; }
   .content h2 {
     font-size: 48px;
     font-family: 'HelveticaNeueW01-UltLt';
@@ -180,6 +230,23 @@ strong {
       text-align: center; }
       .content p.content-centered.smaller {
         font-size: 16px; }
+    .content p.content-article-text {
+      display: inline;
+      max-width: 275px; }
+      @media screen and (min-width: 960px) {
+        .content p.content-article-text {
+          display: block; } }
+      .lt-ie9 .content p.content-article-text {
+        display: block; }
+  .content .content-button {
+    display: inline-block;
+    border: 1px solid #999;
+    padding: .5em 2em;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #2b2b2b; }
+    .content .content-button:hover {
+      color: #d92128; }
   .content dl {
     margin: 0;
     padding: 0; }
@@ -197,6 +264,15 @@ strong {
     .content img.content-full {
       max-width: none;
       margin-top: 50px; }
+    .content img.content-article-image {
+      margin: 0;
+      display: inline-block;
+      max-width: 361px; }
+      @media screen and (min-width: 960px) {
+        .content img.content-article-image {
+          margin: 0 -25px 0 0; } }
+      .lt-ie9 .content img.content-article-image {
+        margin: 0 -25px 0 0; }
   .content input[type="text"], .content input[type="email"] {
     box-sizing: border-box;
     width: 100%;
@@ -229,6 +305,15 @@ strong {
 .content-page {
   padding-top: 83px; }
 
+.content-right {
+  text-align: right; }
+
+.content-centered {
+  margin: auto; }
+
+.content-constrained {
+  max-width: 410px; }
+
 .is-collapsed {
   height: 0;
   opacity: 0;
@@ -257,7 +342,7 @@ strong {
   ------------------------------------------- */
 .global-nav {
   background: #fbfbfb;
-  text-align: right;
+  text-align: center;
   border-bottom: 1px solid #e9e9ea;
   overflow: hidden;
   margin: 0;
@@ -268,15 +353,15 @@ strong {
       font-size: 16px;
       color: #666;
       display: inline-block;
-      padding: 17px 0 0;
+      padding: 17px 0;
       min-width: 64px;
       text-align: center;
       margin-right: -6px; }
       @media screen and (min-width: 480px) {
         .global-nav > li > a {
-          padding: 17px 7px 0; } }
+          padding: 17px 7px; } }
       .lt-ie9 .global-nav > li > a {
-        padding: 17px 7px 0; }
+        padding: 17px 7px; }
       @media screen and (min-width: 768px) {
         .global-nav > li > a {
           font-size: 18px; } }
@@ -290,7 +375,7 @@ strong {
     .global-nav > li:nth-child(3) > a {
       padding-right: 11px; }
     .global-nav > li.active > a {
-      font-family: 'HelveticaNeueW01-65Medi'; }
+      color: #d92128; }
       .global-nav > li.active > a:hover {
         color: #666; }
         @media screen and (min-width: 960px) {
@@ -299,7 +384,16 @@ strong {
         .lt-ie9 .global-nav > li.active > a:hover {
           color: #d92128; }
     .global-nav > li:first-child {
-      float: left; }
+      display: none; }
+      @media screen and (min-width: 960px) {
+        .global-nav > li:first-child {
+          display: inline-block;
+          position: absolute;
+          left: 0; } }
+      .lt-ie9 .global-nav > li:first-child {
+        display: inline-block;
+        position: absolute;
+        left: 0; }
       .global-nav > li:first-child > a {
         margin: 0 0 0 17px;
         padding: 17px 0;
@@ -338,11 +432,33 @@ strong {
   white-space: nowrap;
   overflow: hidden;
   width: 201px;
-  margin: auto; }
+  margin: 60px auto 0; }
+  @media screen and (min-width: 960px) {
+    .splash h1 {
+      margin: 100px auto 0; } }
+  .lt-ie9 .splash h1 {
+    margin: 100px auto 0; }
+
+.splash-tagline {
+  position: absolute;
+  text-align: center;
+  bottom: 20px;
+  width: 100%; }
 
 .icon-logo-png {
   background: url("/img/logo-@2x.png") no-repeat 0 -22px;
   background-size: 100% auto; }
+
+.icon-chevron-down {
+  width: 61px;
+  height: 31px;
+  display: block;
+  margin: 40px auto 0; }
+  @media screen and (min-width: 960px) {
+    .icon-chevron-down {
+      margin: 60px auto 0; } }
+  .lt-ie9 .icon-chevron-down {
+    margin: 60px auto 0; }
 
 /*	testimonials
   ------------------------------------------- */

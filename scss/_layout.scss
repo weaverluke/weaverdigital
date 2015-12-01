@@ -6,7 +6,21 @@
 	@include container;
 	list-style:none;
 	margin:auto;
-	max-width:410px;
+//	max-width:410px;
+}
+
+.grid-2-up{
+	@include respond(small){
+		float:left;
+		width:50%;
+	}
+	
+	&.gutter{
+		@include respond(small){
+			box-sizing:border-box;
+			padding-left:60px;
+		}
+	}
 }
 
 .grid > li{
@@ -52,6 +66,10 @@
 	&.container-last{
 		vertical-align:bottom;
 		padding-bottom:100px;
+	}
+	
+	&.container-top{
+		vertical-align:top;
 	}
 }
 

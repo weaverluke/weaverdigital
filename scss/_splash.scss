@@ -5,11 +5,33 @@
 		white-space: nowrap; 
 		overflow: hidden;
 		width:201px;
-		margin:auto;
+		margin:60px auto 0;
+		
+		@include respond(large){
+			margin:100px auto 0;
+		}
 	}
+}
+
+.splash-tagline{
+	position:absolute;
+	text-align:center;
+	bottom:20px;
+	width:100%;
 }
 
 .icon-logo-png{
 	background: url('/img/logo-@2x.png') no-repeat 0 -22px;
 	background-size:100% auto;
+}
+
+.icon-chevron-down{
+	width:61px;
+	height:31px;
+	display:block;
+	margin:40px auto 0;
+	
+	@include respond(large){
+		margin:60px auto 0;
+	}
 }

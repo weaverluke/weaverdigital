@@ -1,9 +1,7 @@
 /*	content (standard copy styles)
   ------------------------------------------- */
 .content{
-	padding:0 20px;
-	max-width:410px;
-	margin:auto;
+	padding:0 20px;	
 	
 	@include respond(large){
 		padding:0;
@@ -14,6 +12,19 @@
 			size:34px;
 		};
 		margin:0;
+		
+		&.content-article-heading{
+			font-family: "HelveticaNeueW01-UltLt";
+		    font-size: 55px;
+		    font-weight: normal;
+		    line-height: 1.1;
+			max-width:275px;
+			margin:25px 0;			
+			
+			@include respond(large){
+				margin:235px 0 25px;
+			}
+		}
 	}
 	
 	h2{
@@ -83,6 +94,28 @@
 				font-size:16px;
 			}
 		}
+		
+		&.content-article-text{
+			display:inline;
+			max-width:275px;
+			
+			@include respond(large){
+				display:block;
+			}
+		}
+	}
+	
+	.content-button{
+		display:inline-block;
+		border:1px solid $light-grey;
+		padding:.5em 2em;
+		border-radius:5px;
+		font-size:16px;
+		color:#2b2b2b;
+		
+		&:hover{
+			color:$red;
+		}
 	}
 	
 	dl{
@@ -107,6 +140,17 @@
 		&.content-full{
 			max-width:none;
 			margin-top:50px;
+		}
+		
+		&.content-article-image{
+			margin:0;
+			display:inline-block;
+			max-width:361px;
+//			max-height:80vh;	// hmmmm
+			
+			@include respond(large){
+				margin:0 -25px 0 0;
+			}
 		}
 	}
 	
@@ -150,6 +194,18 @@
 
 .content-page{
 	padding-top:83px;
+}
+
+.content-right{
+	text-align:right;
+}
+
+.content-centered{
+	margin:auto;
+}
+
+.content-constrained{
+	max-width:410px;
 }
 
 .is-collapsed{

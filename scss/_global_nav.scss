@@ -2,7 +2,7 @@
   ------------------------------------------- */
 .global-nav{
 	background:#fbfbfb;
-	text-align:right;
+	text-align:center;
 	border-bottom:1px solid #e9e9ea;
 	overflow:hidden;
 	@include reset-margins;
@@ -14,13 +14,13 @@
 			font-size:16px;
 			color:$grey;
 			display:inline-block;
-			padding:17px 0 0;
+			padding:17px 0;
 			min-width:64px;
 			text-align:center;
 			margin-right: -6px;
 
 			@include respond(small){
-				padding:17px 7px 0;
+				padding:17px 7px;
 			}
 			
 			@include respond(medium){
@@ -42,7 +42,7 @@
 		
 		&.active{
 			> a{				
-				font-family:'HelveticaNeueW01-65Medi';
+				color:$red;
 				
 				&:hover{
 					color:$grey;
@@ -55,7 +55,13 @@
 		}
 		
 		&:first-child{
-			float:left;
+			display:none;
+			
+			@include respond(large){
+				display:inline-block;
+				position:absolute;
+				left:0;
+			}
 			
 			> a{
 				margin:0 0 0 17px;
