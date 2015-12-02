@@ -65,33 +65,54 @@ strong {
   padding: 0;
   list-style: none;
   margin: auto; }
+  .grid.grid-clients {
+    max-width: 630px; }
 
-@media screen and (min-width: 480px) {
-  .grid-2-up {
-    float: left;
-    width: 50%; } }
-.lt-ie9 .grid-2-up {
-  float: left;
-  width: 50%; }
-@media screen and (min-width: 480px) {
-  .grid-2-up.gutter {
-    box-sizing: border-box;
-    padding-left: 60px; } }
-.lt-ie9 .grid-2-up.gutter {
-  box-sizing: border-box;
-  padding-left: 60px; }
-
-.grid > li {
-  margin: 0 0 40px; }
+.grid-2-up {
+  margin-bottom: 55px; }
   @media screen and (min-width: 480px) {
-    .grid > li {
-      margin: 0 0 80px;
+    .grid-2-up {
       float: left;
       width: 50%; } }
-  .lt-ie9 .grid > li {
-    margin: 0 0 80px;
+  .lt-ie9 .grid-2-up {
     float: left;
     width: 50%; }
+  @media screen and (min-width: 480px) {
+    .grid-2-up.gutter {
+      box-sizing: border-box;
+      padding-left: 60px; } }
+  .lt-ie9 .grid-2-up.gutter {
+    box-sizing: border-box;
+    padding-left: 60px; }
+  @media screen and (min-width: 480px) {
+    .grid-2-up.gutter-right {
+      box-sizing: border-box;
+      padding-right: 60px; } }
+  .lt-ie9 .grid-2-up.gutter-right {
+    box-sizing: border-box;
+    padding-right: 60px; }
+  @media screen and (min-width: 480px) {
+    .grid-2-up.right {
+      text-align: right; } }
+  .lt-ie9 .grid-2-up.right {
+    text-align: right; }
+  @media screen and (min-width: 480px) {
+    .grid-2-up.float-right {
+      float: right; } }
+  .lt-ie9 .grid-2-up.float-right {
+    float: right; }
+
+.grid > .grid-3-up {
+  margin: 0 0 40px; }
+  @media screen and (min-width: 480px) {
+    .grid > .grid-3-up {
+      margin: 0 0 80px;
+      float: left;
+      width: 33.3333%; } }
+  .lt-ie9 .grid > .grid-3-up {
+    margin: 0 0 80px;
+    float: left;
+    width: 33.3333%; }
 
 .container-outer {
   display: table;
@@ -180,7 +201,7 @@ strong {
       line-height: 1.1;
       max-width: 275px;
       margin: 25px 0; }
-      @media screen and (min-width: 960px) {
+      @media screen and (min-width: 768px) {
         .content h1.content-article-heading {
           margin: 235px 0 25px; } }
       .lt-ie9 .content h1.content-article-heading {
@@ -204,15 +225,6 @@ strong {
       margin-top: 40px;
       text-align: center;
       transition: opacity 0.3s, visibility 0s 0.3s; }
-      .content p.content-expand > a {
-        display: inline-block;
-        border: 1px solid #999;
-        padding: .5em 2em;
-        border-radius: 5px;
-        font-size: 16px;
-        color: #2b2b2b; }
-        .content p.content-expand > a:hover {
-          color: #d92128; }
     .content p.is-hidden {
       visibility: hidden;
       opacity: 0; }
@@ -230,6 +242,13 @@ strong {
       text-align: center; }
       .content p.content-centered.smaller {
         font-size: 16px; }
+      @media screen and (min-width: 960px) {
+        .content p.content-centered.low-res {
+          text-align: inherit;
+          padding: 0; } }
+      .lt-ie9 .content p.content-centered.low-res {
+        text-align: inherit;
+        padding: 0; }
     .content p.content-article-text {
       display: inline;
       max-width: 275px; }
@@ -243,6 +262,7 @@ strong {
     border: 1px solid #999;
     padding: .5em 2em;
     border-radius: 5px;
+    margin-top: 15px;
     font-size: 16px;
     color: #2b2b2b; }
     .content .content-button:hover {
@@ -270,9 +290,16 @@ strong {
       max-width: 361px; }
       @media screen and (min-width: 960px) {
         .content img.content-article-image {
-          margin: 0 -25px 0 0; } }
+          margin: 30px -25px 0 0; } }
       .lt-ie9 .content img.content-article-image {
-        margin: 0 -25px 0 0; }
+        margin: 30px -25px 0 0; }
+      @media screen and (min-width: 960px) {
+        .content img.content-article-image.content-article-image-right {
+          margin: 30px 0 0 -25px; } }
+      .lt-ie9 .content img.content-article-image.content-article-image-right {
+        margin: 30px 0 0 -25px; }
+      .content img.content-article-image.content-article-image-wide {
+        max-width: 590px; }
   .content input[type="text"], .content input[type="email"] {
     box-sizing: border-box;
     width: 100%;
@@ -305,8 +332,13 @@ strong {
 .content-page {
   padding-top: 83px; }
 
-.content-right {
-  text-align: right; }
+@media screen and (min-width: 960px) {
+  .content-right {
+    text-align: right;
+    float: right; } }
+.lt-ie9 .content-right {
+  text-align: right;
+  float: right; }
 
 .content-centered {
   margin: auto; }
@@ -452,35 +484,56 @@ strong {
 .icon-chevron-down {
   width: 61px;
   height: 31px;
-  display: block;
-  margin: 40px auto 0; }
+  display: inline-block;
+  margin: 20px auto 0;
+  transition: all 0.3s;
+  position: relative;
+  bottom: 0; }
   @media screen and (min-width: 960px) {
     .icon-chevron-down {
-      margin: 60px auto 0; } }
+      margin: 40px auto 0; } }
   .lt-ie9 .icon-chevron-down {
-    margin: 60px auto 0; }
+    margin: 40px auto 0; }
+  @media screen and (min-width: 960px) {
+    .icon-chevron-down:hover {
+      bottom: -10px; } }
+  .lt-ie9 .icon-chevron-down:hover {
+    bottom: -10px; }
 
 /*	testimonials
   ------------------------------------------- */
 .testimonials {
   margin: auto;
-  max-width: 450px; }
-  @media screen and (min-width: 960px) {
+  max-width: 450px;
+  text-align: center; }
+  @media screen and (min-width: 768px) {
     .testimonials {
-      max-width: 410px; } }
+      max-width: 630px; } }
   .lt-ie9 .testimonials {
-    max-width: 410px; }
+    max-width: 630px; }
   .testimonials > blockquote {
     margin: 0;
     padding: 0;
     padding: 0 20px 40px; }
-    @media screen and (min-width: 960px) {
+    @media screen and (min-width: 768px) {
       .testimonials > blockquote {
         padding: 0 0 40px; } }
     .lt-ie9 .testimonials > blockquote {
       padding: 0 0 40px; }
+    .testimonials > blockquote > p {
+      font-family: "HelveticaNeueW01-UltLt";
+      margin-bottom: 25px; }
+      @media screen and (min-width: 768px) {
+        .testimonials > blockquote > p {
+          font-size: 55px; } }
+      .lt-ie9 .testimonials > blockquote > p {
+        font-size: 55px; }
     .testimonials > blockquote > cite {
+      font-family: "HelveticaNeueW01-UltLt";
       color: #999;
-      font-style: normal; }
+      font-style: normal;
+      font-size: 20px; }
+      .testimonials > blockquote > cite > strong {
+        font-family: "HelveticaNeueW01-45Ligh"; }
 
 /*# sourceMappingURL=style.css.map */

@@ -3,7 +3,7 @@
 .content{
 	padding:0 20px;	
 	
-	@include respond(large){
+	@include respond($large){
 		padding:0;
 	}
 	
@@ -21,7 +21,7 @@
 			max-width:275px;
 			margin:25px 0;			
 			
-			@include respond(large){
+			@include respond($medium){
 				margin:235px 0 25px;
 			}
 		}
@@ -33,7 +33,7 @@
 		font-weight:normal;
 		line-height: 1.1;
 		
-		@include respond(large){
+		@include respond($large){
 			white-space:nowrap;
 			font-size: 56px;
 		}
@@ -47,19 +47,6 @@
 			margin-top:40px;
 			text-align:center;
 			transition:opacity 0.3s, visibility 0s 0.3s;
-			
-			> a{
-				display:inline-block;
-				border:1px solid $light-grey;
-				padding:.5em 2em;
-				border-radius:5px;
-				font-size:16px;
-				color:#2b2b2b;
-				
-				&:hover{
-					color:$red;
-				}
-			}
 		}
 		
 		&.is-hidden{
@@ -93,13 +80,20 @@
 			&.smaller{
 				font-size:16px;
 			}
+			
+			&.low-res{
+				@include respond($large){
+					text-align:inherit;
+					padding:0;
+				}
+			}
 		}
 		
 		&.content-article-text{
 			display:inline;
 			max-width:275px;
 			
-			@include respond(large){
+			@include respond($large){
 				display:block;
 			}
 		}
@@ -110,6 +104,7 @@
 		border:1px solid $light-grey;
 		padding:.5em 2em;
 		border-radius:5px;
+		margin-top:15px;
 		font-size:16px;
 		color:#2b2b2b;
 		
@@ -148,9 +143,19 @@
 			max-width:361px;
 //			max-height:80vh;	// hmmmm
 			
-			@include respond(large){
-				margin:0 -25px 0 0;
+			@include respond($large){
+				margin:30px -25px 0 0;
 			}
+			
+			&.content-article-image-right{			
+				@include respond($large){
+					margin:30px 0 0 -25px;
+				}
+			}
+			
+			&.content-article-image-wide{
+				max-width:590px;
+			}	
 		}
 	}
 	
@@ -197,7 +202,10 @@
 }
 
 .content-right{
-	text-align:right;
+	@include respond($large){
+		text-align:right;
+		float:right;
+	}
 }
 
 .content-centered{

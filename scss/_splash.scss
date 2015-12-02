@@ -7,7 +7,7 @@
 		width:201px;
 		margin:60px auto 0;
 		
-		@include respond(large){
+		@include respond($large){
 			margin:100px auto 0;
 		}
 	}
@@ -28,10 +28,19 @@
 .icon-chevron-down{
 	width:61px;
 	height:31px;
-	display:block;
-	margin:40px auto 0;
+	display:inline-block;
+	margin:20px auto 0;
+	transition:all 0.3s;
+	position:relative;
+	bottom:0;
 	
-	@include respond(large){
-		margin:60px auto 0;
+	@include respond($large){
+		margin:40px auto 0;
+	}
+	
+	&:hover{
+		@include respond($large){
+			bottom:-10px;
+		}
 	}
 }

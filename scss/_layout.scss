@@ -6,29 +6,55 @@
 	@include container;
 	list-style:none;
 	margin:auto;
-//	max-width:410px;
+//	max-width:768px;
+
+	&.grid-clients{
+		max-width:630px;
+	}
 }
 
 .grid-2-up{
-	@include respond(small){
+	margin-bottom:55px;
+	
+	@include respond($small){
 		float:left;
 		width:50%;
+//		@include show-guides;
 	}
 	
 	&.gutter{
-		@include respond(small){
+		@include respond($small){
 			box-sizing:border-box;
 			padding-left:60px;
 		}
 	}
+	
+	&.gutter-right{
+		@include respond($small){
+			box-sizing:border-box;
+			padding-right:60px;
+		}
+	}
+	
+	&.right{
+		@include respond($small){
+			text-align:right;
+		}
+	}
+	
+	&.float-right{
+		@include respond($small){
+			float:right;
+		}
+	}
 }
 
-.grid > li{
+.grid > .grid-3-up{
 	margin:0 0 40px;
-	@include respond(small){
+	@include respond($small){
 		margin:0 0 80px;
 		float:left;		
-		width:50%;
+		width:33.3333%;
 	}	
 }
 

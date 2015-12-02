@@ -23,7 +23,7 @@ var navScroll = {
 	links:null,
 	toplinks:null,
 	init:function(){
-		this.links = $('.global-nav > li > a, .splash-tagline > a');
+		this.links = $('.global-nav > li > a, .content-scroll');
 		this.links.click(function(e){
 			e.preventDefault();	
 			anchor = $(this).data('scroll');		

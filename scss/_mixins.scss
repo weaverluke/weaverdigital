@@ -1,35 +1,18 @@
-// media queries / IE fallbacks mixin
+// media queries mixin
 @mixin respond($width){
-	@if $width == small{
-		@media screen and (min-width: $small) {
-			@content;
-		}
-	}
-	@else if $width == medium{
-		@media screen and (min-width: $medium) {
-			@content;
-		}
-	}
-	@else if $width == large{
-		@media screen and (min-width: $large) {
-			@content;
-		}
-	}
-	@else if $width == wide{
-		@media screen and (min-width: $wide) {
-			@content;
-		}
+	@media screen and (min-width: $width) {
+		@content;
 	}	
 	.lt-ie9 & {
 	    @content;
-	}
+	}	
 }
 
 @mixin container(){
 //	max-width:410px;
 //	margin:auto;
 	
-//	@include respond(large){
+//	@include respond($large){
 //		padding:0;
 //	}	
 }
@@ -37,4 +20,9 @@
 @mixin reset-margins(){
 	margin:0;
 	padding:0;
+}
+
+@mixin show-guides(){
+	border: 1px dashed rgba(0,0,0,.1);
+    box-sizing: border-box;
 }

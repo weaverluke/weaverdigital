@@ -3,9 +3,10 @@
 .testimonials{
 	margin:auto;
 	max-width:450px;
+	text-align:center;
 	
-	@include respond(large){
-		max-width:410px;
+	@include respond($medium){
+		max-width:630px;
 	}
 	
 	> blockquote{
@@ -13,13 +14,28 @@
 		@include reset-margins;
 		padding:0 20px 40px;
 		
-		@include respond(large){
+		@include respond($medium){
 			padding:0 0 40px;
 		}
 		
+		> p{
+			font-family: "HelveticaNeueW01-UltLt";
+			margin-bottom:25px;
+			
+			@include respond($medium){
+			    font-size: 55px;
+			}
+		}
+		
 		> cite{
+			font-family: "HelveticaNeueW01-UltLt";
 			color:$light-grey;
 			font-style:normal;
+			font-size:20px;
+			
+			> strong{
+				font-family:"HelveticaNeueW01-45Ligh";
+			}
 		}
 	}
 }
