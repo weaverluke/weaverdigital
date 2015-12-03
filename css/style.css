@@ -64,39 +64,45 @@ strong {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin: auto; }
+  margin: auto;
+  max-width: 320px; }
+  @media screen and (min-width: 768px) {
+    .grid {
+      max-width: 768px; } }
+  .lt-ie9 .grid {
+    max-width: 768px; }
   .grid.grid-clients {
     max-width: 630px; }
 
 .grid-2-up {
   margin-bottom: 55px; }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     .grid-2-up {
       float: left;
       width: 50%; } }
   .lt-ie9 .grid-2-up {
     float: left;
     width: 50%; }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     .grid-2-up.gutter {
       box-sizing: border-box;
       padding-left: 60px; } }
   .lt-ie9 .grid-2-up.gutter {
     box-sizing: border-box;
     padding-left: 60px; }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     .grid-2-up.gutter-right {
       box-sizing: border-box;
       padding-right: 60px; } }
   .lt-ie9 .grid-2-up.gutter-right {
     box-sizing: border-box;
     padding-right: 60px; }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     .grid-2-up.right {
       text-align: right; } }
   .lt-ie9 .grid-2-up.right {
     text-align: right; }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     .grid-2-up.float-right {
       float: right; } }
   .lt-ie9 .grid-2-up.float-right {
@@ -104,7 +110,7 @@ strong {
 
 .grid > .grid-3-up {
   margin: 0 0 40px; }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     .grid > .grid-3-up {
       margin: 0 0 80px;
       float: left;
@@ -118,7 +124,8 @@ strong {
   display: table;
   height: 100%;
   width: 100%;
-  margin-bottom: 150px; }
+  padding-top: 67px;
+  box-sizing: border-box; }
   .container-outer.is-splash {
     background: #fff;
     z-index: 1; }
@@ -186,7 +193,7 @@ strong {
   ------------------------------------------- */
 .content {
   padding: 0 20px; }
-  @media screen and (min-width: 960px) {
+  @media screen and (min-width: 768px) {
     .content {
       padding: 0; } }
   .lt-ie9 .content {
@@ -203,21 +210,15 @@ strong {
       margin: 25px 0; }
       @media screen and (min-width: 768px) {
         .content h1.content-article-heading {
-          margin: 235px 0 25px; } }
+          margin: 205px 0 25px; } }
       .lt-ie9 .content h1.content-article-heading {
-        margin: 235px 0 25px; }
+        margin: 205px 0 25px; }
+      .content h1.content-article-heading.content-article-heading-unconstrained {
+        max-width: none;
+        margin: 0 0 25px; }
   .content h2 {
-    font-size: 48px;
-    font-family: 'HelveticaNeueW01-UltLt';
-    font-weight: normal;
-    line-height: 1.1; }
-    @media screen and (min-width: 960px) {
-      .content h2 {
-        white-space: nowrap;
-        font-size: 56px; } }
-    .lt-ie9 .content h2 {
-      white-space: nowrap;
-      font-size: 56px; }
+    font-size: 24px;
+    font-weight: normal; }
   .content p {
     margin: 0 0 1em;
     line-height: 1.5; }
@@ -238,25 +239,25 @@ strong {
       margin: 75px 0 25px; }
       .content p.content-larger > a {
         color: #d92128; }
-    .content p.content-centered {
-      text-align: center; }
-      .content p.content-centered.smaller {
-        font-size: 16px; }
-      @media screen and (min-width: 960px) {
-        .content p.content-centered.low-res {
-          text-align: inherit;
-          padding: 0; } }
-      .lt-ie9 .content p.content-centered.low-res {
-        text-align: inherit;
-        padding: 0; }
-    .content p.content-article-text {
+    .content p.content-article {
       display: inline;
       max-width: 275px; }
-      @media screen and (min-width: 960px) {
-        .content p.content-article-text {
+      @media screen and (min-width: 768px) {
+        .content p.content-article {
           display: block; } }
-      .lt-ie9 .content p.content-article-text {
+      .lt-ie9 .content p.content-article {
         display: block; }
+  .content .content-article-centered {
+    text-align: center; }
+    .content .content-article-centered.smaller {
+      font-size: 16px; }
+    @media screen and (min-width: 768px) {
+      .content .content-article-centered.low-res {
+        text-align: inherit;
+        padding: 0; } }
+    .lt-ie9 .content .content-article-centered.low-res {
+      text-align: inherit;
+      padding: 0; }
   .content .content-button {
     display: inline-block;
     border: 1px solid #999;
@@ -288,18 +289,21 @@ strong {
       margin: 0;
       display: inline-block;
       max-width: 361px; }
-      @media screen and (min-width: 960px) {
+      @media screen and (min-width: 768px) {
         .content img.content-article-image {
-          margin: 30px -25px 0 0; } }
+          margin: 0 -25px 0 0; } }
       .lt-ie9 .content img.content-article-image {
-        margin: 30px -25px 0 0; }
-      @media screen and (min-width: 960px) {
+        margin: 0 -25px 0 0; }
+      @media screen and (min-width: 768px) {
         .content img.content-article-image.content-article-image-right {
           margin: 30px 0 0 -25px; } }
       .lt-ie9 .content img.content-article-image.content-article-image-right {
         margin: 30px 0 0 -25px; }
       .content img.content-article-image.content-article-image-wide {
         max-width: 590px; }
+  .content form {
+    max-width: 400px;
+    margin: auto; }
   .content input[type="text"], .content input[type="email"] {
     box-sizing: border-box;
     width: 100%;
@@ -332,7 +336,7 @@ strong {
 .content-page {
   padding-top: 83px; }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 768px) {
   .content-right {
     text-align: right;
     float: right; } }
@@ -344,7 +348,7 @@ strong {
   margin: auto; }
 
 .content-constrained {
-  max-width: 410px; }
+  max-width: 630px; }
 
 .is-collapsed {
   height: 0;
@@ -417,7 +421,7 @@ strong {
           color: #d92128; }
     .global-nav > li:first-child {
       display: none; }
-      @media screen and (min-width: 960px) {
+      @media screen and (min-width: 768px) {
         .global-nav > li:first-child {
           display: inline-block;
           position: absolute;
@@ -522,7 +526,8 @@ strong {
       padding: 0 0 40px; }
     .testimonials > blockquote > p {
       font-family: "HelveticaNeueW01-UltLt";
-      margin-bottom: 25px; }
+      margin-bottom: 25px;
+      font-size: 34px; }
       @media screen and (min-width: 768px) {
         .testimonials > blockquote > p {
           font-size: 55px; } }

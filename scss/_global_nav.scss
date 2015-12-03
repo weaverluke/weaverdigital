@@ -57,7 +57,7 @@
 		&:first-child{
 			display:none;
 			
-			@include respond($large){
+			@include respond($medium){
 				display:inline-block;
 				position:absolute;
 				left:0;

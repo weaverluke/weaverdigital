@@ -3,7 +3,7 @@
 .content{
 	padding:0 20px;	
 	
-	@include respond($large){
+	@include respond($medium){
 		padding:0;
 	}
 	
@@ -22,21 +22,19 @@
 			margin:25px 0;			
 			
 			@include respond($medium){
-				margin:235px 0 25px;
+				margin:205px 0 25px;
+			}
+			
+			&.content-article-heading-unconstrained{
+				max-width:none;
+				margin:0 0 25px;			
 			}
 		}
 	}
 	
 	h2{
-		font-size: 48px;
-		font-family:'HelveticaNeueW01-UltLt';
+		font-size: 24px;
 		font-weight:normal;
-		line-height: 1.1;
-		
-		@include respond($large){
-			white-space:nowrap;
-			font-size: 56px;
-		}
 	}
 	
 	p{
@@ -74,27 +72,27 @@
 			}
 		}
 		
-		&.content-centered{
-			text-align:center;
-			
-			&.smaller{
-				font-size:16px;
-			}
-			
-			&.low-res{
-				@include respond($large){
-					text-align:inherit;
-					padding:0;
-				}
-			}
-		}
-		
-		&.content-article-text{
+		&.content-article{
 			display:inline;
 			max-width:275px;
 			
-			@include respond($large){
+			@include respond($medium){
 				display:block;
+			}
+		}
+	}
+	
+	.content-article-centered{
+		text-align:center;
+		
+		&.smaller{
+			font-size:16px;
+		}
+		
+		&.low-res{
+			@include respond($medium){
+				text-align:inherit;
+				padding:0;
 			}
 		}
 	}
@@ -143,12 +141,12 @@
 			max-width:361px;
 //			max-height:80vh;	// hmmmm
 			
-			@include respond($large){
-				margin:30px -25px 0 0;
+			@include respond($medium){
+				margin:0 -25px 0 0;
 			}
 			
 			&.content-article-image-right{			
-				@include respond($large){
+				@include respond($medium){
 					margin:30px 0 0 -25px;
 				}
 			}
@@ -157,6 +155,11 @@
 				max-width:590px;
 			}	
 		}
+	}
+	
+	form{
+		max-width:400px;
+		margin:auto;
 	}
 	
 	input[type="text"], input[type="email"]{
@@ -202,7 +205,7 @@
 }
 
 .content-right{
-	@include respond($large){
+	@include respond($medium){
 		text-align:right;
 		float:right;
 	}
@@ -213,7 +216,7 @@
 }
 
 .content-constrained{
-	max-width:410px;
+	max-width:630px;
 }
 
 .is-collapsed{

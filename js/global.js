@@ -18,9 +18,9 @@ var navScroll = {
 			anchor = $(this).data('scroll');		
 			if (typeof anchor != 'undefined'){				
 				// test content height to see if a navigation offset is required
-				if($(anchor).height() > $(window).height())
-					offset = $(anchor).offset().top - 83;				
-				else
+//				if($(anchor).height() > $(window).height())
+//					offset = $(anchor).offset().top - 83;				
+//				else
 					offset = $(anchor).offset().top;				
 				
 				$('html, body').animate({scrollTop:offset}, 300);
@@ -64,7 +64,7 @@ var collapsedContent = {
 		$('.content-expand > a').click(function(e){
 			e.preventDefault();
 				
-//			if(!collapsedContent.isPinned)	{
+/*			if(!collapsedContent.isPinned)	{
 				// pin vertical position of About panel
 				var pixelsFromTop = $('#About .content').offset().top - $('#About').offset().top;
 				$('#About .content').css('margin-top',pixelsFromTop);
@@ -74,7 +74,7 @@ var collapsedContent = {
 				$('#DesignLaunchpad .content').css('margin-top',launchpadPixelsFromTop);
 			
 //				collapsedContent.isPinned = true;
-//			}
+//			}*/
 			
 			$(this).parent('p').addClass('is-hidden').next('.is-collapsed').addClass('is-expanded');
 			_gaq.push(['_trackEvent', 'UI', 'Button - Inline Expand', $(this).data('scroll')]);	// track an inline expand
@@ -89,12 +89,14 @@ $(function(){
 		scrollTransitions.init();
 		collapsedContent.init();
 
+		/*
 		$('#LearnMoreAbout').click(function(e){
 			e.preventDefault();
 			$('.content-expand').addClass('is-hidden');
 			$('.content-expand').next('div').addClass('is-expanded');	// reveal collapse content
 			$('.global-nav > li:eq(1)').children('a').click();
 		});
+		*/
 	}	
 	
 	/* grunticon Stylesheet Loader | https://github.com/filamentgroup/grunticon | (c) 2012 Scott Jehl, Filament Group, Inc. | MIT license. */
