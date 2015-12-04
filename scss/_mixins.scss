@@ -26,3 +26,13 @@
 	border: 1px dashed rgba(0,0,0,.1);
     box-sizing: border-box;
 }
+
+@mixin clearfix(){
+	&:after{	// clearfix for overflow
+		clear: both;
+	    content: ".";
+	    display: block;
+	    height: 0;
+	    visibility: hidden;
+	}
+}

@@ -22,7 +22,7 @@
 			margin:25px 0;			
 			
 			@include respond($medium){
-				margin:205px 0 25px;
+				margin:140px 0 25px;
 			}
 			
 			&.content-article-heading-unconstrained{
@@ -139,7 +139,6 @@
 			margin:0;
 			display:inline-block;
 			max-width:361px;
-//			max-height:80vh;	// hmmmm
 			
 			@include respond($medium){
 				margin:0 -25px 0 0;
@@ -152,7 +151,14 @@
 			}
 			
 			&.content-article-image-wide{
-				max-width:590px;
+				width:450px;
+				margin-left:-170px;
+				max-width:none;				
+				
+				@include respond($medium){
+					max-width:none;				
+					width:auto;
+				}
 			}	
 		}
 	}
@@ -201,7 +207,7 @@
 }
 
 .content-page{
-	padding-top:83px;
+	padding-top:16px;
 }
 
 .content-right{
@@ -217,6 +223,10 @@
 
 .content-constrained{
 	max-width:630px;
+}
+
+.content-constrained-narrow{
+	max-width:410px;
 }
 
 .is-collapsed{

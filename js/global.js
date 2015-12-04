@@ -88,6 +88,11 @@ $(function(){
 		navScroll.init();	
 		scrollTransitions.init();
 		collapsedContent.init();
+		
+		$('a').each(function(){
+			if($(this).attr('target') == "_blank")
+				$(this).attr('title','Opens new browser window');
+		});
 
 		/*
 		$('#LearnMoreAbout').click(function(e){

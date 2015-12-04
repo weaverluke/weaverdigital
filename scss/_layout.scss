@@ -1,9 +1,9 @@
 /*	grid
   ------------------------------------------- */
 .grid{
-	overflow:hidden;
 	@include reset-margins;
 	@include container;
+	@include clearfix;
 	list-style:none;
 	margin:auto;
 	max-width:320px;
@@ -18,12 +18,13 @@
 }
 
 .grid-2-up{
-	margin-bottom:55px;
+//	margin-bottom:55px;
+	position:relative;
 	
 	@include respond($medium){
 		float:left;
 		width:50%;
-//		@include show-guides;
+		@include show-guides;
 	}
 	
 	&.gutter{
