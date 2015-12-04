@@ -14,7 +14,7 @@
 		
 		&.hidden{
 			opacity:0;
-			margin-top:40px;
+			margin-top:80px;
 			
 			@include respond($large){
 				margin-top:120px;
