@@ -6,9 +6,19 @@
 		overflow: hidden;
 		width:201px;
 		margin:60px auto 0;
+		transition:all 0.6s;
 		
 		@include respond($large){
 			margin:100px auto 0;
+		}
+		
+		&.hidden{
+			opacity:0;
+			margin-top:40px;
+			
+			@include respond($large){
+				margin-top:120px;
+			}
 		}
 	}
 }
@@ -18,6 +28,12 @@
 	text-align:center;
 	bottom:20px;
 	width:100%;
+	transition:all 0.6s 1s;
+	
+	&.hidden{
+		opacity:0;
+		bottom:40px;
+	}
 }
 
 .icon-logo-png{
@@ -33,6 +49,7 @@
 	transition:all 0.3s;
 	position:relative;
 	bottom:0;
+	transition:all 0.6s 1.6s;
 	
 	@include respond($large){
 		margin:40px auto 0;
@@ -42,5 +59,9 @@
 		@include respond($large){
 			bottom:-10px;
 		}
+	}
+	
+	&.hidden{
+		opacity:0;
 	}
 }

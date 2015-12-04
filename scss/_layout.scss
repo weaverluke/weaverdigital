@@ -18,13 +18,12 @@
 }
 
 .grid-2-up{
-//	margin-bottom:55px;
 	position:relative;
 	
 	@include respond($medium){
 		float:left;
 		width:50%;
-		@include show-guides;
+//		@include show-guides;
 	}
 	
 	&.gutter{

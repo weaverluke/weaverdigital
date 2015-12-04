@@ -84,14 +84,10 @@ strong {
   @media screen and (min-width: 768px) {
     .grid-2-up {
       float: left;
-      width: 50%;
-      border: 1px dashed rgba(0, 0, 0, 0.1);
-      box-sizing: border-box; } }
+      width: 50%; } }
   .lt-ie9 .grid-2-up {
     float: left;
-    width: 50%;
-    border: 1px dashed rgba(0, 0, 0, 0.1);
-    box-sizing: border-box; }
+    width: 50%; }
   @media screen and (min-width: 768px) {
     .grid-2-up.gutter {
       box-sizing: border-box;
@@ -489,18 +485,31 @@ strong {
   white-space: nowrap;
   overflow: hidden;
   width: 201px;
-  margin: 60px auto 0; }
+  margin: 60px auto 0;
+  transition: all 0.6s; }
   @media screen and (min-width: 960px) {
     .splash h1 {
       margin: 100px auto 0; } }
   .lt-ie9 .splash h1 {
     margin: 100px auto 0; }
+  .splash h1.hidden {
+    opacity: 0;
+    margin-top: 40px; }
+    @media screen and (min-width: 960px) {
+      .splash h1.hidden {
+        margin-top: 120px; } }
+    .lt-ie9 .splash h1.hidden {
+      margin-top: 120px; }
 
 .splash-tagline {
   position: absolute;
   text-align: center;
   bottom: 20px;
-  width: 100%; }
+  width: 100%;
+  transition: all 0.6s 1s; }
+  .splash-tagline.hidden {
+    opacity: 0;
+    bottom: 40px; }
 
 .icon-logo-png {
   background: url("/img/logo-@2x.png") no-repeat 0 -22px;
@@ -513,7 +522,8 @@ strong {
   margin: 20px auto 0;
   transition: all 0.3s;
   position: relative;
-  bottom: 0; }
+  bottom: 0;
+  transition: all 0.6s 1.6s; }
   @media screen and (min-width: 960px) {
     .icon-chevron-down {
       margin: 40px auto 0; } }
@@ -524,6 +534,8 @@ strong {
       bottom: -10px; } }
   .lt-ie9 .icon-chevron-down:hover {
     bottom: -10px; }
+  .icon-chevron-down.hidden {
+    opacity: 0; }
 
 /*	testimonials
   ------------------------------------------- */
@@ -561,5 +573,28 @@ strong {
       font-size: 20px; }
       .testimonials > blockquote > cite > strong {
         font-family: "HelveticaNeueW01-45Ligh"; }
+
+/*	testimonials
+  ------------------------------------------- */
+.testimonials-small {
+  margin: auto;
+  max-width: 450px; }
+  @media screen and (min-width: large) {
+    .testimonials-small {
+      max-width: 410px; } }
+  .lt-ie9 .testimonials-small {
+    max-width: 410px; }
+  .testimonials-small > blockquote {
+    margin: 0;
+    padding: 0;
+    padding: 0 20px 40px; }
+    @media screen and (min-width: large) {
+      .testimonials-small > blockquote {
+        padding: 0 0 40px; } }
+    .lt-ie9 .testimonials-small > blockquote {
+      padding: 0 0 40px; }
+    .testimonials-small > blockquote > cite {
+      color: #999;
+      font-style: normal; }
 
 /*# sourceMappingURL=style.css.map */

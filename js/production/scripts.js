@@ -104,15 +104,8 @@ $(function(){
 			if($(this).attr('target') == "_blank")
 				$(this).attr('title','Opens new browser window');
 		});
-
-		/*
-		$('#LearnMoreAbout').click(function(e){
-			e.preventDefault();
-			$('.content-expand').addClass('is-hidden');
-			$('.content-expand').next('div').addClass('is-expanded');	// reveal collapse content
-			$('.global-nav > li:eq(1)').children('a').click();
-		});
-		*/
+		
+		$('.splash h1, .splash-tagline, .splash .icon-chevron-down').removeClass("hidden");
 	}	
 	
 	/* grunticon Stylesheet Loader | https://github.com/filamentgroup/grunticon | (c) 2012 Scott Jehl, Filament Group, Inc. | MIT license. */
