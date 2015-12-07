@@ -13,7 +13,11 @@
 	}
 
 	&.grid-clients{
-		max-width:630px;
+		max-width:480px;
+		
+		@include respond($medium){
+			max-width:630px;
+		}
 	}
 }
 
@@ -55,9 +59,15 @@
 
 .grid > .grid-3-up{
 	margin:0 0 40px;
-	@include respond($medium){
+	@include show-guides();
+	
+	@include respond($small){
 		margin:0 0 80px;
 		float:left;		
+		width:50%;
+	}
+	
+	@include respond($medium){
 		width:33.3333%;
 	}	
 }

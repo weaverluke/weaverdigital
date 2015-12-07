@@ -77,7 +77,12 @@ strong {
   .lt-ie9 .grid {
     max-width: 768px; }
   .grid.grid-clients {
-    max-width: 630px; }
+    max-width: 480px; }
+    @media screen and (min-width: 768px) {
+      .grid.grid-clients {
+        max-width: 630px; } }
+    .lt-ie9 .grid.grid-clients {
+      max-width: 630px; }
 
 .grid-2-up {
   position: relative; }
@@ -114,15 +119,22 @@ strong {
     float: right; }
 
 .grid > .grid-3-up {
-  margin: 0 0 40px; }
-  @media screen and (min-width: 768px) {
+  margin: 0 0 40px;
+  border: 1px dashed rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; }
+  @media screen and (min-width: 480px) {
     .grid > .grid-3-up {
       margin: 0 0 80px;
       float: left;
-      width: 33.3333%; } }
+      width: 50%; } }
   .lt-ie9 .grid > .grid-3-up {
     margin: 0 0 80px;
     float: left;
+    width: 50%; }
+  @media screen and (min-width: 768px) {
+    .grid > .grid-3-up {
+      width: 33.3333%; } }
+  .lt-ie9 .grid > .grid-3-up {
     width: 33.3333%; }
 
 .container-outer {
