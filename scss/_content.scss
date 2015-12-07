@@ -175,8 +175,10 @@
 	}
 	
 	input[type="text"], input[type="email"]{
+		outline:none;
 		-webkit-appearance:none;
 		box-sizing:border-box;
+		border:1px solid $pale-grey;
 		width:100%;
 		font-size:16px;
 		padding:10px;
@@ -189,7 +191,6 @@
 		-webkit-appearance:none;
 		text-align:center;
 		display:block;
-//		margin:3em auto;
 		margin:40px auto 28px;
 		border:1px solid $light-grey;
 		padding:.5em 2em;
