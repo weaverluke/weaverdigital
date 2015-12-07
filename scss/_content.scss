@@ -13,7 +13,7 @@
 		};
 		margin:0;
 		
-		&.content-article-heading{
+		&.content-heading{
 			font-family: "HelveticaNeueW01-UltLt";
 		    font-size: 55px;
 		    font-weight: normal;
@@ -22,12 +22,18 @@
 			margin:25px 0;			
 			
 			@include respond($medium){
-				margin:140px 0 25px;
+				margin:227px 0 25px;
 			}
 			
-			&.content-article-heading-unconstrained{
+			&.content-heading-unconstrained{
 				max-width:none;
 				margin:0 0 25px;			
+			}
+			
+			&.content-heading-small-margin{
+				@include respond($medium){
+					margin:133px 0 25px;
+				}
 			}
 		}
 	}
@@ -42,8 +48,6 @@
 		line-height:1.5;
 		
 		&.content-expand{
-			margin-top:40px;
-			text-align:center;
 			transition:opacity 0.3s, visibility 0s 0.3s;
 		}
 		
@@ -56,15 +60,13 @@
 			font:{
 				size:22px;
 			};		
-			color:#666;
+			color:$grey;
 			margin:20px 0 60px;
 		}
 		
 		&.content-larger{
-			font:{
-				size:30px;
-			};		
 			color:#999;
+			font-size:30px;
 			margin:75px 0 25px;
 			
 			> a{
@@ -72,7 +74,7 @@
 			}
 		}
 		
-		&.content-article{
+		&.content-text{
 			display:inline;
 			max-width:275px;
 			
@@ -82,7 +84,7 @@
 		}
 	}
 	
-	.content-article-centered{
+	.content-text-centered{
 		text-align:center;
 		
 		&.smaller{
@@ -94,6 +96,10 @@
 				text-align:inherit;
 				padding:0;
 			}
+		}
+		
+		&.fixed-bottom-margin{
+			margin-bottom:50px;
 		}
 	}
 	
@@ -135,28 +141,28 @@
 			margin-top:50px;
 		}
 		
-		&.content-article-image{
+		&.content-image{
 			margin:0;
 			display:inline-block;
 			max-width:361px;
 			
 			@include respond($medium){
+				width:auto;
 				margin:0 -25px 0 0;
 			}
 			
-			&.content-article-image-right{			
+			&.content-image-right{			
 				@include respond($medium){
 					margin:30px 0 0 -25px;
 				}
 			}
 			
-			&.content-article-image-wide{
+			&.content-image-wide{
 				width:450px;
 				margin-left:-170px;
-				max-width:none;				
+				max-width:560px;				
 				
 				@include respond($medium){
-					max-width:none;				
 					width:auto;
 				}
 			}	
@@ -183,7 +189,8 @@
 		-webkit-appearance:none;
 		text-align:center;
 		display:block;
-		margin:3em auto;
+//		margin:3em auto;
+		margin:40px auto 28px;
 		border:1px solid $light-grey;
 		padding:.5em 2em;
 		border-radius:5px;

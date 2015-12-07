@@ -26,6 +26,14 @@
 			@include respond($medium){
 			    font-size: 55px;
 			}
+			
+			&.testimonial-about{
+				margin:0 0 -3px;
+				
+				@include respond($medium){
+					margin-bottom:33px;
+				}
+			}
 		}
 		
 		> cite{

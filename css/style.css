@@ -33,7 +33,7 @@ html {
 
 body {
   height: 100%;
-  color: #666;
+  color: #565656;
   margin: 0;
   font-family: "HelveticaNeueW01-45Ligh", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 20px;
@@ -129,11 +129,16 @@ strong {
   display: table;
   height: 100%;
   width: 100%;
-  padding-top: 67px;
-  box-sizing: border-box; }
-  .container-outer.is-splash {
-    background: #fff;
-    z-index: 1; }
+  padding-top: 85px;
+  box-sizing: border-box;
+  margin-bottom: 200px; }
+  @media screen and (min-width: 768px) {
+    .container-outer {
+      margin-bottom: 300px; } }
+  .lt-ie9 .container-outer {
+    margin-bottom: 300px; }
+  .container-outer.container-outer-splash {
+    padding-top: 0; }
   .container-outer.is-transition {
     transition: opacity 0.3s 0.3s; }
   .container-outer.is-hidden {
@@ -206,7 +211,7 @@ strong {
   .content h1 {
     font-size: 34px;
     margin: 0; }
-    .content h1.content-article-heading {
+    .content h1.content-heading {
       font-family: "HelveticaNeueW01-UltLt";
       font-size: 55px;
       font-weight: normal;
@@ -214,13 +219,18 @@ strong {
       max-width: 275px;
       margin: 25px 0; }
       @media screen and (min-width: 768px) {
-        .content h1.content-article-heading {
-          margin: 140px 0 25px; } }
-      .lt-ie9 .content h1.content-article-heading {
-        margin: 140px 0 25px; }
-      .content h1.content-article-heading.content-article-heading-unconstrained {
+        .content h1.content-heading {
+          margin: 227px 0 25px; } }
+      .lt-ie9 .content h1.content-heading {
+        margin: 227px 0 25px; }
+      .content h1.content-heading.content-heading-unconstrained {
         max-width: none;
         margin: 0 0 25px; }
+      @media screen and (min-width: 768px) {
+        .content h1.content-heading.content-heading-small-margin {
+          margin: 133px 0 25px; } }
+      .lt-ie9 .content h1.content-heading.content-heading-small-margin {
+        margin: 133px 0 25px; }
   .content h2 {
     font-size: 24px;
     font-weight: normal; }
@@ -228,41 +238,41 @@ strong {
     margin: 0 0 1em;
     line-height: 1.5; }
     .content p.content-expand {
-      margin-top: 40px;
-      text-align: center;
       transition: opacity 0.3s, visibility 0s 0.3s; }
     .content p.is-hidden {
       visibility: hidden;
       opacity: 0; }
     .content p.content-large {
       font-size: 22px;
-      color: #666;
+      color: #565656;
       margin: 20px 0 60px; }
     .content p.content-larger {
-      font-size: 30px;
       color: #999;
+      font-size: 30px;
       margin: 75px 0 25px; }
       .content p.content-larger > a {
         color: #d92128; }
-    .content p.content-article {
+    .content p.content-text {
       display: inline;
       max-width: 275px; }
       @media screen and (min-width: 768px) {
-        .content p.content-article {
+        .content p.content-text {
           display: block; } }
-      .lt-ie9 .content p.content-article {
+      .lt-ie9 .content p.content-text {
         display: block; }
-  .content .content-article-centered {
+  .content .content-text-centered {
     text-align: center; }
-    .content .content-article-centered.smaller {
+    .content .content-text-centered.smaller {
       font-size: 16px; }
     @media screen and (min-width: 768px) {
-      .content .content-article-centered.low-res {
+      .content .content-text-centered.low-res {
         text-align: inherit;
         padding: 0; } }
-    .lt-ie9 .content .content-article-centered.low-res {
+    .lt-ie9 .content .content-text-centered.low-res {
       text-align: inherit;
       padding: 0; }
+    .content .content-text-centered.fixed-bottom-margin {
+      margin-bottom: 50px; }
   .content .content-button {
     display: inline-block;
     border: 1px solid #999;
@@ -290,30 +300,30 @@ strong {
     .content img.content-full {
       max-width: none;
       margin-top: 50px; }
-    .content img.content-article-image {
+    .content img.content-image {
       margin: 0;
       display: inline-block;
       max-width: 361px; }
       @media screen and (min-width: 768px) {
-        .content img.content-article-image {
+        .content img.content-image {
+          width: auto;
           margin: 0 -25px 0 0; } }
-      .lt-ie9 .content img.content-article-image {
+      .lt-ie9 .content img.content-image {
+        width: auto;
         margin: 0 -25px 0 0; }
       @media screen and (min-width: 768px) {
-        .content img.content-article-image.content-article-image-right {
+        .content img.content-image.content-image-right {
           margin: 30px 0 0 -25px; } }
-      .lt-ie9 .content img.content-article-image.content-article-image-right {
+      .lt-ie9 .content img.content-image.content-image-right {
         margin: 30px 0 0 -25px; }
-      .content img.content-article-image.content-article-image-wide {
+      .content img.content-image.content-image-wide {
         width: 450px;
         margin-left: -170px;
-        max-width: none; }
+        max-width: 560px; }
         @media screen and (min-width: 768px) {
-          .content img.content-article-image.content-article-image-wide {
-            max-width: none;
+          .content img.content-image.content-image-wide {
             width: auto; } }
-        .lt-ie9 .content img.content-article-image.content-article-image-wide {
-          max-width: none;
+        .lt-ie9 .content img.content-image.content-image-wide {
           width: auto; }
   .content form {
     max-width: 400px;
@@ -324,7 +334,7 @@ strong {
     width: 100%;
     font-size: 16px;
     padding: 10px;
-    color: #666; }
+    color: #565656; }
   .content button {
     margin: 0;
     padding: 0;
@@ -332,7 +342,7 @@ strong {
     -webkit-appearance: none;
     text-align: center;
     display: block;
-    margin: 3em auto;
+    margin: 40px auto 28px;
     border: 1px solid #999;
     padding: .5em 2em;
     border-radius: 5px;
@@ -385,7 +395,7 @@ strong {
     display: block; }
 
 .footer-bar {
-  height: 2px;
+  height: 3px;
   background: #d92128;
   position: fixed;
   bottom: 0;
@@ -405,7 +415,7 @@ strong {
     display: inline; }
     .global-nav > li > a {
       font-size: 16px;
-      color: #666;
+      color: #565656;
       display: inline-block;
       padding: 17px 0;
       min-width: 64px;
@@ -431,7 +441,7 @@ strong {
     .global-nav > li.active > a {
       color: #d92128; }
       .global-nav > li.active > a:hover {
-        color: #666; }
+        color: #565656; }
         @media screen and (min-width: 960px) {
           .global-nav > li.active > a:hover {
             color: #d92128; } }
@@ -505,12 +515,19 @@ strong {
 .splash-tagline {
   position: absolute;
   text-align: center;
-  bottom: 20px;
+  bottom: 35px;
   width: 100%;
-  transition: all 0.6s 1s; }
+  transition: all 0.6s; }
   .splash-tagline.hidden {
     opacity: 0;
-    bottom: 40px; }
+    bottom: 55px; }
+  .splash-tagline p {
+    margin-bottom: 15px; }
+    @media screen and (min-width: 960px) {
+      .splash-tagline p {
+        font-size: 24px; } }
+    .lt-ie9 .splash-tagline p {
+      font-size: 24px; }
 
 .icon-logo-png {
   background: url("/img/logo-@2x.png") no-repeat 0 -22px;
@@ -524,12 +541,12 @@ strong {
   transition: all 0.3s;
   position: relative;
   bottom: 0;
-  transition: all 0.6s 1.6s; }
+  transition: all 0.6s 1s; }
   @media screen and (min-width: 960px) {
     .icon-chevron-down {
-      margin: 40px auto 0; } }
+      margin: 39px auto 0; } }
   .lt-ie9 .icon-chevron-down {
-    margin: 40px auto 0; }
+    margin: 39px auto 0; }
   @media screen and (min-width: 960px) {
     .icon-chevron-down:hover {
       bottom: -10px; } }
@@ -567,6 +584,13 @@ strong {
           font-size: 55px; } }
       .lt-ie9 .testimonials > blockquote > p {
         font-size: 55px; }
+      .testimonials > blockquote > p.testimonial-about {
+        margin: 0 0 -3px; }
+        @media screen and (min-width: 768px) {
+          .testimonials > blockquote > p.testimonial-about {
+            margin-bottom: 33px; } }
+        .lt-ie9 .testimonials > blockquote > p.testimonial-about {
+          margin-bottom: 33px; }
     .testimonials > blockquote > cite {
       color: #999;
       font-style: normal;
