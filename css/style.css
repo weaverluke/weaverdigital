@@ -229,6 +229,8 @@ strong {
     padding: 0; }
   .content h1 {
     font-size: 34px;
+    font-family: "HelveticaNeueW01-65Medi";
+    font-weight: normal;
     margin: 0; }
     .content h1.content-heading {
       font-family: "HelveticaNeueW01-UltLt";
