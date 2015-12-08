@@ -27,7 +27,7 @@
 			
 			&.content-heading-unconstrained{
 				max-width:none;
-				margin:0 0 25px;			
+				margin:0 0 22px;			
 			}
 			
 			&.content-heading-small-margin{
@@ -41,6 +41,7 @@
 	h2{
 		font-size: 24px;
 		font-weight:normal;
+		font-family:"HelveticaNeueW01-65Medi";
 	}
 	
 	p{
@@ -75,8 +76,8 @@
 		}
 		
 		&.content-text{
-			display:inline;
 			max-width:275px;
+			display:inline;
 			
 			@include respond($medium){
 				display:block;
@@ -96,11 +97,28 @@
 				text-align:inherit;
 				padding:0;
 			}
+			
+			.content-button{
+				margin-top:32px;
+				
+				@include respond($medium){
+					margin-top:15px;
+				}
+			}
 		}
 		
 		&.fixed-bottom-margin{
 			margin-bottom:50px;
 		}
+	}
+	
+	.content-text-constrained{
+		max-width:510px;
+		margin:auto;
+	}
+	
+	.content-text-larger{
+		font-size:24px;
 	}
 	
 	.content-button{
@@ -175,11 +193,16 @@
 	
 	form{
 		max-width:400px;
-		margin:auto;
+		margin:44px auto 0;
+		
+		p{
+			margin-bottom:26px;
+		}
 	}
 	
 	input[type="text"], input[type="email"]{
 		outline:none;
+		font-family:"HelveticaNeueW01-45Ligh";
 		-webkit-appearance:none;
 		box-sizing:border-box;
 		border:1px solid $pale-grey;

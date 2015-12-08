@@ -244,7 +244,7 @@ strong {
         margin: 227px 0 25px; }
       .content h1.content-heading.content-heading-unconstrained {
         max-width: none;
-        margin: 0 0 25px; }
+        margin: 0 0 22px; }
       @media screen and (min-width: 768px) {
         .content h1.content-heading.content-heading-small-margin {
           margin: 133px 0 25px; } }
@@ -252,7 +252,8 @@ strong {
         margin: 133px 0 25px; }
   .content h2 {
     font-size: 24px;
-    font-weight: normal; }
+    font-weight: normal;
+    font-family: "HelveticaNeueW01-65Medi"; }
   .content p {
     margin: 0 0 1em;
     line-height: 1.5; }
@@ -272,8 +273,8 @@ strong {
       .content p.content-larger > a {
         color: #d92128; }
     .content p.content-text {
-      display: inline;
-      max-width: 275px; }
+      max-width: 275px;
+      display: inline; }
       @media screen and (min-width: 768px) {
         .content p.content-text {
           display: block; } }
@@ -290,8 +291,20 @@ strong {
     .lt-ie9 .content .content-text-centered.low-res {
       text-align: inherit;
       padding: 0; }
+    .content .content-text-centered.low-res .content-button {
+      margin-top: 32px; }
+      @media screen and (min-width: 768px) {
+        .content .content-text-centered.low-res .content-button {
+          margin-top: 15px; } }
+      .lt-ie9 .content .content-text-centered.low-res .content-button {
+        margin-top: 15px; }
     .content .content-text-centered.fixed-bottom-margin {
       margin-bottom: 50px; }
+  .content .content-text-constrained {
+    max-width: 510px;
+    margin: auto; }
+  .content .content-text-larger {
+    font-size: 24px; }
   .content .content-button {
     display: inline-block;
     border: 1px solid #999;
@@ -348,9 +361,12 @@ strong {
           width: auto; }
   .content form {
     max-width: 400px;
-    margin: auto; }
+    margin: 44px auto 0; }
+    .content form p {
+      margin-bottom: 26px; }
   .content input[type="text"], .content input[type="email"] {
     outline: none;
+    font-family: "HelveticaNeueW01-45Ligh";
     -webkit-appearance: none;
     box-sizing: border-box;
     border: 1px solid #e7e7e8;
@@ -601,12 +617,7 @@ strong {
     .testimonials > blockquote > p {
       font-family: "HelveticaNeueW01-UltLt";
       margin-bottom: 25px;
-      font-size: 34px; }
-      @media screen and (min-width: 768px) {
-        .testimonials > blockquote > p {
-          font-size: 55px; } }
-      .lt-ie9 .testimonials > blockquote > p {
-        font-size: 55px; }
+      font-size: 55px; }
       .testimonials > blockquote > p.testimonial-about {
         margin: 0 0 -3px; }
         @media screen and (min-width: 768px) {
