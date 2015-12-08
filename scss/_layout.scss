@@ -28,7 +28,7 @@
 
 .grid-2-up{
 	position:relative;
-	@include show-guides;
+//	@include show-guides;
 	
 	@include respond($medium){
 		float:left;
