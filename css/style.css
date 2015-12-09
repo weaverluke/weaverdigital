@@ -39,7 +39,8 @@ body {
   font-size: 20px;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
-  position: relative; }
+  position: relative;
+  overflow-x: hidden; }
   body.is-splash {
     padding-top: 200%; }
 
@@ -72,16 +73,9 @@ strong {
     visibility: hidden; }
   @media screen and (min-width: 768px) {
     .grid {
-      max-width: 768px;
-      overflow: hidden; } }
+      max-width: 768px; } }
   .lt-ie9 .grid {
-    max-width: 768px;
-    overflow: hidden; }
-  @media screen and (min-width: 769px) {
-    .grid {
-      overflow: visible; } }
-  .lt-ie9 .grid {
-    overflow: visible; }
+    max-width: 768px; }
   .grid.grid-clients {
     max-width: 480px; }
     @media screen and (min-width: 768px) {
@@ -91,7 +85,9 @@ strong {
       max-width: 630px; }
 
 .grid-2-up {
-  position: relative; }
+  position: relative;
+  border: 1px dashed rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; }
   @media screen and (min-width: 768px) {
     .grid-2-up {
       float: left;
@@ -102,10 +98,10 @@ strong {
   @media screen and (min-width: 768px) {
     .grid-2-up.gutter {
       box-sizing: border-box;
-      padding-left: 60px; } }
+      padding-left: 40px; } }
   .lt-ie9 .grid-2-up.gutter {
     box-sizing: border-box;
-    padding-left: 60px; }
+    padding-left: 40px; }
   @media screen and (min-width: 768px) {
     .grid-2-up.gutter-right {
       box-sizing: border-box;
@@ -373,8 +369,18 @@ strong {
   .content .content-image-container {
     width: 100%;
     position: relative; }
+    @media screen and (min-width: 768px) {
+      .content .content-image-container {
+        position: static; } }
+    .lt-ie9 .content .content-image-container {
+      position: static; }
   .content .content-image-container-worldpay {
     height: 600px; }
+    @media screen and (min-width: 768px) {
+      .content .content-image-container-worldpay {
+        height: 753px; } }
+    .lt-ie9 .content .content-image-container-worldpay {
+      height: 753px; }
   .content .content-image-worldpay {
     position: absolute;
     height: 600px;
@@ -384,8 +390,24 @@ strong {
     background-size: 286px auto;
     left: 50%;
     margin-left: -143px; }
+    @media screen and (min-width: 768px) {
+      .content .content-image-worldpay {
+        width: 358px;
+        height: 753px;
+        background-size: 358px auto;
+        margin-left: -148px; } }
+    .lt-ie9 .content .content-image-worldpay {
+      width: 358px;
+      height: 753px;
+      background-size: 358px auto;
+      margin-left: -148px; }
   .content .content-image-container-noddle {
     height: 620px; }
+    @media screen and (min-width: 768px) {
+      .content .content-image-container-noddle {
+        height: 774px; } }
+    .lt-ie9 .content .content-image-container-noddle {
+      height: 774px; }
   .content .content-image-noddle {
     position: absolute;
     height: 620px;
@@ -395,8 +417,24 @@ strong {
     background-size: 342px auto;
     left: 50%;
     margin-left: -145px; }
+    @media screen and (min-width: 768px) {
+      .content .content-image-noddle {
+        width: 427px;
+        height: 774px;
+        background-size: 427px auto;
+        margin-left: -205px; } }
+    .lt-ie9 .content .content-image-noddle {
+      width: 427px;
+      height: 774px;
+      background-size: 427px auto;
+      margin-left: -205px; }
   .content .content-image-container-local-discoveries {
     height: 530px; }
+    @media screen and (min-width: 768px) {
+      .content .content-image-container-local-discoveries {
+        height: 790px; } }
+    .lt-ie9 .content .content-image-container-local-discoveries {
+      height: 790px; }
   .content .content-image-local-discoveries {
     position: absolute;
     height: 530px;
@@ -406,8 +444,26 @@ strong {
     background-size: 379px auto;
     left: 50%;
     margin-left: -285px; }
+    @media screen and (min-width: 768px) {
+      .content .content-image-local-discoveries {
+        height: 790px;
+        width: 564px;
+        background-size: 564px auto;
+        right: -20px;
+        left: auto; } }
+    .lt-ie9 .content .content-image-local-discoveries {
+      height: 790px;
+      width: 564px;
+      background-size: 564px auto;
+      right: -20px;
+      left: auto; }
   .content .content-image-container-yarn {
     height: 524px; }
+    @media screen and (min-width: 768px) {
+      .content .content-image-container-yarn {
+        height: 655px; } }
+    .lt-ie9 .content .content-image-container-yarn {
+      height: 655px; }
   .content .content-image-yarn {
     position: absolute;
     height: 524px;
@@ -417,8 +473,26 @@ strong {
     background-size: 379px auto;
     left: 50%;
     margin-left: -221px; }
+    @media screen and (min-width: 768px) {
+      .content .content-image-yarn {
+        height: 655px;
+        width: 474px;
+        background-size: 474px auto;
+        right: -20px;
+        left: auto; } }
+    .lt-ie9 .content .content-image-yarn {
+      height: 655px;
+      width: 474px;
+      background-size: 474px auto;
+      right: -20px;
+      left: auto; }
   .content .content-image-container-learn-skills {
     height: 530px; }
+    @media screen and (min-width: 768px) {
+      .content .content-image-container-learn-skills {
+        height: 704px; } }
+    .lt-ie9 .content .content-image-container-learn-skills {
+      height: 704px; }
   .content .content-image-learn-skills {
     position: absolute;
     height: 530px;
@@ -428,6 +502,19 @@ strong {
     background-size: 470px auto;
     left: 50%;
     margin-left: -228px; }
+    @media screen and (min-width: 768px) {
+      .content .content-image-learn-skills {
+        height: 704px;
+        width: 588px;
+        background-size: 588px auto;
+        right: -20px;
+        left: auto; } }
+    .lt-ie9 .content .content-image-learn-skills {
+      height: 704px;
+      width: 588px;
+      background-size: 588px auto;
+      right: -20px;
+      left: auto; }
   .content form {
     max-width: 400px;
     margin: 44px auto 0; }
@@ -491,6 +578,15 @@ strong {
   max-width: 300px;
   padding: 0 20px;
   margin: auto; }
+  @media screen and (min-width: 768px) {
+    .content-constrained-article {
+      margin: 0;
+      padding: 0;
+      max-width: 275px; } }
+  .lt-ie9 .content-constrained-article {
+    margin: 0;
+    padding: 0;
+    max-width: 275px; }
 
 .is-collapsed {
   height: 0;

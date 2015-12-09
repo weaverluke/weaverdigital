@@ -6,15 +6,9 @@
 	@include clearfix;
 	list-style:none;
 	margin:auto;
-//	max-width:320px;
 	
 	@include respond($medium){
 		max-width:768px;
-		overflow:hidden;
-	}
-	
-	@include respond(769px){
-		overflow:visible;
 	}
 
 	&.grid-clients{
@@ -28,7 +22,7 @@
 
 .grid-2-up{
 	position:relative;
-//	@include show-guides;
+	@include show-guides;
 	
 	@include respond($medium){
 		float:left;
@@ -38,7 +32,7 @@
 	&.gutter{
 		@include respond($medium){
 			box-sizing:border-box;
-			padding-left:60px;
+			padding-left:40px;
 		}
 	}
 	

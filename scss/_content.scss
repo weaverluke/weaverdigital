@@ -201,10 +201,18 @@
 	.content-image-container{
 		width:100%;
 		position:relative;
+		
+		@include respond($medium){
+			position:static;
+		}
 	}
 	
 	.content-image-container-worldpay{
 		height:600px;
+		
+		@include respond($medium){
+			height:753px;
+		}
 	}
 	
 	.content-image-worldpay{
@@ -216,10 +224,21 @@
 		background-size:286px auto;
 		left:50%;
 		margin-left:-143px;	// offset	
+		
+		@include respond($medium){
+			width:358px;
+			height:753px;
+			background-size:358px auto;
+			margin-left:-148px;	// offset	
+		}
 	}
 	
 	.content-image-container-noddle{
 		height:620px;
+		
+		@include respond($medium){
+			height:774px;
+		}
 	}
 	
 	.content-image-noddle{
@@ -231,10 +250,21 @@
 		background-size:342px auto;
 		left:50%;
 		margin-left:-145px;	// offset	
+		
+		@include respond($medium){
+			width:427px;
+			height:774px;
+			background-size:427px auto;
+			margin-left:-205px;	// offset	
+		}
 	}
 	
 	.content-image-container-local-discoveries{
 		height:530px;
+		
+		@include respond($medium){
+			height:790px;
+		}
 	}
 	
 	.content-image-local-discoveries{
@@ -246,10 +276,22 @@
 		background-size:379px auto;
 		left:50%;
 		margin-left:-285px;	// offset	
+		
+		@include respond($medium){
+			height:790px;
+			width:564px;
+			background-size:564px auto;
+			right:-20px;
+			left:auto;
+		}		
 	}
 	
 	.content-image-container-yarn{
 		height:524px;
+		
+		@include respond($medium){
+			height:655px;
+		}	
 	}
 	
 	.content-image-yarn{
@@ -261,10 +303,22 @@
 		background-size:379px auto;
 		left:50%;
 		margin-left:-221px;	// offset	
+		
+		@include respond($medium){
+			height:655px;
+			width:474px;
+			background-size:474px auto;
+			right:-20px;
+			left:auto;
+		}	
 	}
 	
 	.content-image-container-learn-skills{
 		height:530px;
+		
+		@include respond($medium){
+			height:704px;
+		}
 	}
 	
 	.content-image-learn-skills{
@@ -276,6 +330,14 @@
 		background-size:470px auto;
 		left:50%;
 		margin-left:-228px;	// offset	
+		
+		@include respond($medium){
+			height:704px;
+			width:588px;
+			background-size:588px auto;
+			right:-20px;
+			left:auto;
+		}
 	}
 	
 	form{
@@ -357,6 +419,12 @@
 	max-width:300px;
 	padding:0 20px;
 	margin:auto;
+	
+	@include respond($medium){
+		margin:0;
+		padding:0;
+		max-width:275px;
+	}
 }
 
 .is-collapsed{
