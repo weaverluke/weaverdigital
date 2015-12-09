@@ -374,7 +374,7 @@ strong {
       position: static; }
   .content .content-image-container-worldpay {
     height: 600px; }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 321px) {
       .content .content-image-container-worldpay {
         height: 753px; } }
     .lt-ie9 .content .content-image-container-worldpay {
@@ -384,24 +384,24 @@ strong {
     height: 600px;
     width: 286px;
     display: block;
-    background: url(/img/worldpay-screen.jpg) center top no-repeat;
+    background: url(/img/worldpay-screen-low-2x.jpg) center top no-repeat;
     background-size: 286px auto;
     left: 50%;
-    margin-left: -143px; }
-    @media screen and (min-width: 768px) {
+    margin-left: -178px; }
+    @media screen and (min-width: 321px) {
       .content .content-image-worldpay {
         width: 358px;
         height: 753px;
-        background-size: 358px auto;
-        margin-left: -148px; } }
+        background: url(/img/worldpay-screen.jpg) center top no-repeat;
+        background-size: 358px auto; } }
     .lt-ie9 .content .content-image-worldpay {
       width: 358px;
       height: 753px;
-      background-size: 358px auto;
-      margin-left: -148px; }
+      background: url(/img/worldpay-screen.jpg) center top no-repeat;
+      background-size: 358px auto; }
   .content .content-image-container-noddle {
     height: 620px; }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 321px) {
       .content .content-image-container-noddle {
         height: 774px; } }
     .lt-ie9 .content .content-image-container-noddle {
@@ -411,24 +411,24 @@ strong {
     height: 620px;
     width: 342px;
     display: block;
-    background: url(/img/noddle-screen.jpg) center top no-repeat;
+    background: url(/img/noddle-screen-low-2x.jpg) center top no-repeat;
     background-size: 342px auto;
     left: 50%;
-    margin-left: -145px; }
-    @media screen and (min-width: 768px) {
+    margin-left: -225px; }
+    @media screen and (min-width: 321px) {
       .content .content-image-noddle {
         width: 427px;
         height: 774px;
-        background-size: 427px auto;
-        margin-left: -205px; } }
+        background: url(/img/noddle-screen.jpg) center top no-repeat;
+        background-size: 427px auto; } }
     .lt-ie9 .content .content-image-noddle {
       width: 427px;
       height: 774px;
-      background-size: 427px auto;
-      margin-left: -205px; }
+      background: url(/img/noddle-screen.jpg) center top no-repeat;
+      background-size: 427px auto; }
   .content .content-image-container-local-discoveries {
     height: 530px; }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 321px) {
       .content .content-image-container-local-discoveries {
         height: 790px; } }
     .lt-ie9 .content .content-image-container-local-discoveries {
@@ -438,26 +438,24 @@ strong {
     height: 530px;
     width: 379px;
     display: block;
-    background: url(/img/local-discoveries-screen.jpg) center top no-repeat;
+    background: url(/img/local-discoveries-screen-low-2x.jpg) center top no-repeat;
     background-size: 379px auto;
     left: 50%;
     margin-left: -285px; }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 321px) {
       .content .content-image-local-discoveries {
         height: 790px;
         width: 564px;
-        background-size: 564px auto;
-        right: -20px;
-        left: auto; } }
+        background: url(/img/local-discoveries-screen.jpg) center top no-repeat;
+        background-size: 564px auto; } }
     .lt-ie9 .content .content-image-local-discoveries {
       height: 790px;
       width: 564px;
-      background-size: 564px auto;
-      right: -20px;
-      left: auto; }
+      background: url(/img/local-discoveries-screen.jpg) center top no-repeat;
+      background-size: 564px auto; }
   .content .content-image-container-yarn {
     height: 524px; }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 321px) {
       .content .content-image-container-yarn {
         height: 655px; } }
     .lt-ie9 .content .content-image-container-yarn {
@@ -467,26 +465,28 @@ strong {
     height: 524px;
     width: 379px;
     display: block;
-    background: url(/img/yarn-screen.jpg) center top no-repeat;
+    background: url(/img/yarn-screen-low-2x.jpg) center top no-repeat;
     background-size: 379px auto;
     left: 50%;
     margin-left: -221px; }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 321px) {
       .content .content-image-yarn {
         height: 655px;
         width: 474px;
+        background: url(/img/yarn-screen.jpg) center top no-repeat;
         background-size: 474px auto;
         right: -20px;
         left: auto; } }
     .lt-ie9 .content .content-image-yarn {
       height: 655px;
       width: 474px;
+      background: url(/img/yarn-screen.jpg) center top no-repeat;
       background-size: 474px auto;
       right: -20px;
       left: auto; }
   .content .content-image-container-learn-skills {
     height: 530px; }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 321px) {
       .content .content-image-container-learn-skills {
         height: 704px; } }
     .lt-ie9 .content .content-image-container-learn-skills {
@@ -496,20 +496,22 @@ strong {
     height: 530px;
     width: 470px;
     display: block;
-    background: url(/img/learn-skills.jpg) center top no-repeat;
+    background: url(/img/learn-skills-low-2x.jpg) center top no-repeat;
     background-size: 470px auto;
     left: 50%;
     margin-left: -228px; }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 321px) {
       .content .content-image-learn-skills {
         height: 704px;
         width: 588px;
+        background: url(/img/learn-skills.jpg) center top no-repeat;
         background-size: 588px auto;
         right: -20px;
         left: auto; } }
     .lt-ie9 .content .content-image-learn-skills {
       height: 704px;
       width: 588px;
+      background: url(/img/learn-skills.jpg) center top no-repeat;
       background-size: 588px auto;
       right: -20px;
       left: auto; }
