@@ -620,7 +620,9 @@ strong {
   border-bottom: 1px solid #e9e9ea;
   overflow: hidden;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  height: 56px;
+  width: 100%; }
   .global-nav > li {
     display: inline; }
     .global-nav > li > a {
