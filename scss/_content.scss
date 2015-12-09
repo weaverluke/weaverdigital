@@ -223,15 +223,18 @@
 		background:url(/img/worldpay-screen-low-2x.jpg) center top no-repeat;
 		background-size:286px auto;
 		left:50%;
-//		margin-left:-143px;	// offset	
-		margin-left:-178px;	// offset test
+		margin-left:-143px;	// offset	
 		
 		@include respond(321px){
 			width:358px;
 			height:753px;
 			background:url(/img/worldpay-screen.jpg) center top no-repeat;
 			background-size:358px auto;
-//			margin-left:-148px;	// offset	
+			margin-left:-178px;	// offset test
+		}
+		
+		@include respond($medium){
+			margin-left:-143px;	// offset	
 		}
 	}
 	
@@ -251,15 +254,18 @@
 		background:url(/img/noddle-screen-low-2x.jpg) center top no-repeat;
 		background-size:342px auto;
 		left:50%;
-//		margin-left:-145px;	// offset	
-		margin-left:-225px;	// offset	
+		margin-left:-145px;	// offset	
 		
 		@include respond(321px){
 			width:427px;
 			height:774px;
-//			margin-left:-205px;	// offset	
+			margin-left:-193px;	// offset	
 			background:url(/img/noddle-screen.jpg) center top no-repeat;
 			background-size:427px auto;
+		}
+		
+		@include respond($medium){
+			right:0;
 		}
 	}
 	
@@ -279,17 +285,20 @@
 		background:url(/img/local-discoveries-screen-low-2x.jpg) center top no-repeat;
 		background-size:379px auto;
 		left:50%;
-//		margin-left:-285px;	// offset	
-		margin-left:-285px;	// offset	
+		margin-left:-284px;	// offset	
 		
 		@include respond(321px){
 			height:790px;
 			width:564px;
 			background:url(/img/local-discoveries-screen.jpg) center top no-repeat;
 			background-size:564px auto;
-//			right:-20px;
-//			left:auto;
+			margin-left:-371px;	// offset	
 		}		
+		
+		@include respond($medium){
+			right:-27px;
+			left:auto;
+		}
 	}
 	
 	.content-image-container-yarn{

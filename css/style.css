@@ -96,10 +96,10 @@ strong {
   @media screen and (min-width: 768px) {
     .grid-2-up.gutter {
       box-sizing: border-box;
-      padding-left: 40px; } }
+      padding-left: 60px; } }
   .lt-ie9 .grid-2-up.gutter {
     box-sizing: border-box;
-    padding-left: 40px; }
+    padding-left: 60px; }
   @media screen and (min-width: 768px) {
     .grid-2-up.gutter-right {
       box-sizing: border-box;
@@ -387,18 +387,25 @@ strong {
     background: url(/img/worldpay-screen-low-2x.jpg) center top no-repeat;
     background-size: 286px auto;
     left: 50%;
-    margin-left: -178px; }
+    margin-left: -143px; }
     @media screen and (min-width: 321px) {
       .content .content-image-worldpay {
         width: 358px;
         height: 753px;
         background: url(/img/worldpay-screen.jpg) center top no-repeat;
-        background-size: 358px auto; } }
+        background-size: 358px auto;
+        margin-left: -178px; } }
     .lt-ie9 .content .content-image-worldpay {
       width: 358px;
       height: 753px;
       background: url(/img/worldpay-screen.jpg) center top no-repeat;
-      background-size: 358px auto; }
+      background-size: 358px auto;
+      margin-left: -178px; }
+    @media screen and (min-width: 768px) {
+      .content .content-image-worldpay {
+        margin-left: -143px; } }
+    .lt-ie9 .content .content-image-worldpay {
+      margin-left: -143px; }
   .content .content-image-container-noddle {
     height: 620px; }
     @media screen and (min-width: 321px) {
@@ -414,18 +421,25 @@ strong {
     background: url(/img/noddle-screen-low-2x.jpg) center top no-repeat;
     background-size: 342px auto;
     left: 50%;
-    margin-left: -225px; }
+    margin-left: -145px; }
     @media screen and (min-width: 321px) {
       .content .content-image-noddle {
         width: 427px;
         height: 774px;
+        margin-left: -193px;
         background: url(/img/noddle-screen.jpg) center top no-repeat;
         background-size: 427px auto; } }
     .lt-ie9 .content .content-image-noddle {
       width: 427px;
       height: 774px;
+      margin-left: -193px;
       background: url(/img/noddle-screen.jpg) center top no-repeat;
       background-size: 427px auto; }
+    @media screen and (min-width: 768px) {
+      .content .content-image-noddle {
+        right: 0; } }
+    .lt-ie9 .content .content-image-noddle {
+      right: 0; }
   .content .content-image-container-local-discoveries {
     height: 530px; }
     @media screen and (min-width: 321px) {
@@ -441,18 +455,27 @@ strong {
     background: url(/img/local-discoveries-screen-low-2x.jpg) center top no-repeat;
     background-size: 379px auto;
     left: 50%;
-    margin-left: -285px; }
+    margin-left: -284px; }
     @media screen and (min-width: 321px) {
       .content .content-image-local-discoveries {
         height: 790px;
         width: 564px;
         background: url(/img/local-discoveries-screen.jpg) center top no-repeat;
-        background-size: 564px auto; } }
+        background-size: 564px auto;
+        margin-left: -371px; } }
     .lt-ie9 .content .content-image-local-discoveries {
       height: 790px;
       width: 564px;
       background: url(/img/local-discoveries-screen.jpg) center top no-repeat;
-      background-size: 564px auto; }
+      background-size: 564px auto;
+      margin-left: -371px; }
+    @media screen and (min-width: 768px) {
+      .content .content-image-local-discoveries {
+        right: -27px;
+        left: auto; } }
+    .lt-ie9 .content .content-image-local-discoveries {
+      right: -27px;
+      left: auto; }
   .content .content-image-container-yarn {
     height: 524px; }
     @media screen and (min-width: 321px) {
