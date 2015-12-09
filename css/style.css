@@ -63,8 +63,7 @@ strong {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin: auto;
-  max-width: 320px; }
+  margin: auto; }
   .grid:after {
     clear: both;
     content: ".";
@@ -219,7 +218,7 @@ strong {
 /*	content (standard copy styles)
   ------------------------------------------- */
 .content {
-  padding: 0 20px; }
+  overflow: hidden; }
   @media screen and (min-width: 768px) {
     .content {
       padding: 0; } }
@@ -232,7 +231,7 @@ strong {
     margin: 0; }
     .content h1.content-heading {
       font-family: "HelveticaNeueW01-Thin";
-      font-size: 55px;
+      font-size: 49px;
       font-weight: normal;
       line-height: 1.1;
       max-width: 275px;
@@ -324,41 +323,78 @@ strong {
       margin: 0 0 1em;
       line-height: 1.5; }
   .content img {
-    display: block;
+    /*		
+    		display:block;
+    		width:100%;
+    		height:auto;
+    		max-width:330px;
+    		margin:0 auto 70px;
+    */
+    		/*
+    		&.content-image{
+    			margin:0;
+    			display:inline-block;
+    			width:286px; // 80%
+    			max-width:none;
+    			max-width:358px;
+    			
+    			@include respond($medium){
+    				width:auto;
+    				margin:0 -25px 0 0;
+    			}
+    			
+    			&.content-image-right{			
+    				@include respond($medium){
+    					margin:30px 0 0 -25px;
+    				}
+    			}
+    			
+    			&.content-image-large{
+    				width:342px; // 80%	// noddle
+    //				max-width:427px;
+    			}
+    			
+    			&.content-image-larger{
+    				width:379px; // 80%
+    			}
+    			
+    			&.content-image-wide{
+    				width:448px;
+    //				margin-left:-167px;
+    				margin-left:-70px;
+    				max-width:560px;				
+    				
+    				@include respond($medium){
+    					width:auto;
+    				}
+    			}	
+    		}
+    		*/ }
+  .content .content-image-container {
     width: 100%;
-    height: auto;
-    max-width: 330px;
-    margin: 0 auto 70px; }
-    .content img.content-full {
-      max-width: none;
-      margin-top: 50px; }
-    .content img.content-image {
-      margin: 0;
-      display: inline-block;
-      max-width: 358px; }
-      @media screen and (min-width: 768px) {
-        .content img.content-image {
-          width: auto;
-          margin: 0 -25px 0 0; } }
-      .lt-ie9 .content img.content-image {
-        width: auto;
-        margin: 0 -25px 0 0; }
-      @media screen and (min-width: 768px) {
-        .content img.content-image.content-image-right {
-          margin: 30px 0 0 -25px; } }
-      .lt-ie9 .content img.content-image.content-image-right {
-        margin: 30px 0 0 -25px; }
-      .content img.content-image.content-image-large {
-        max-width: 427px; }
-      .content img.content-image.content-image-wide {
-        width: 450px;
-        margin-left: -170px;
-        max-width: 560px; }
-        @media screen and (min-width: 768px) {
-          .content img.content-image.content-image-wide {
-            width: auto; } }
-        .lt-ie9 .content img.content-image.content-image-wide {
-          width: auto; }
+    position: relative; }
+  .content .content-image-container-noddle {
+    height: 620px; }
+  .content .content-image-noddle {
+    position: absolute;
+    height: 620px;
+    width: 342px;
+    display: block;
+    background: url(/img/noddle-screen.jpg) center top no-repeat;
+    background-size: 342px auto;
+    left: 50%;
+    margin-left: -145px; }
+  .content .content-image-container-local-discoveries {
+    height: 530px; }
+  .content .content-image-local-discoveries {
+    position: absolute;
+    height: 530px;
+    width: 379px;
+    display: block;
+    background: url(/img/local-discoveries-screen.jpg) center top no-repeat;
+    background-size: 379px auto;
+    left: 50%;
+    margin-left: -285px; }
   .content form {
     max-width: 400px;
     margin: 44px auto 0; }
@@ -416,6 +452,11 @@ strong {
 
 .content-constrained-narrow {
   max-width: 410px; }
+
+.content-constrained-article {
+  max-width: 300px;
+  padding: 0 20px;
+  margin: auto; }
 
 .is-collapsed {
   height: 0;
@@ -617,7 +658,7 @@ strong {
     .testimonials > blockquote > p {
       font-family: "HelveticaNeueW01-Thin";
       margin-bottom: 25px;
-      font-size: 55px; }
+      font-size: 49px; }
       .testimonials > blockquote > p.testimonial-about {
         margin: 0 0 -3px; }
         @media screen and (min-width: 768px) {

@@ -1,7 +1,7 @@
 /*	content (standard copy styles)
   ------------------------------------------- */
 .content{
-	padding:0 20px;	
+	overflow:hidden;
 	
 	@include respond($medium){
 		padding:0;
@@ -15,7 +15,7 @@
 		
 		&.content-heading{
 			font-family:"HelveticaNeueW01-Thin";
-		    font-size: 55px;
+		    font-size: 49px;
 		    font-weight: normal;
 		    line-height: 1.1;
 			max-width:275px;
@@ -148,20 +148,20 @@
 	}
 	
 	img{
+/*		
 		display:block;
 		width:100%;
 		height:auto;
 		max-width:330px;
 		margin:0 auto 70px;
+*/		
 		
-		&.content-full{
-			max-width:none;
-			margin-top:50px;
-		}
-		
+		/*
 		&.content-image{
 			margin:0;
 			display:inline-block;
+			width:286px; // 80%
+			max-width:none;
 			max-width:358px;
 			
 			@include respond($medium){
@@ -176,12 +176,18 @@
 			}
 			
 			&.content-image-large{
-				max-width:427px;
+				width:342px; // 80%	// noddle
+//				max-width:427px;
+			}
+			
+			&.content-image-larger{
+				width:379px; // 80%
 			}
 			
 			&.content-image-wide{
-				width:450px;
-				margin-left:-170px;
+				width:448px;
+//				margin-left:-167px;
+				margin-left:-70px;
 				max-width:560px;				
 				
 				@include respond($medium){
@@ -189,6 +195,42 @@
 				}
 			}	
 		}
+		*/
+	}
+	
+	.content-image-container{
+		width:100%;
+		position:relative;
+	}
+	
+	.content-image-container-noddle{
+		height:620px;
+	}
+	
+	.content-image-noddle{
+		position:absolute;
+		height:620px;
+		width:342px;
+		display:block;
+		background:url(/img/noddle-screen.jpg) center top no-repeat;
+		background-size:342px auto;
+		left:50%;
+		margin-left:-145px;	// offset	
+	}
+	
+	.content-image-container-local-discoveries{
+		height:530px;
+	}
+	
+	.content-image-local-discoveries{
+		position:absolute;
+		height:530px;
+		width:379px;
+		display:block;
+		background:url(/img/local-discoveries-screen.jpg) center top no-repeat;
+		background-size:379px auto;
+		left:50%;
+		margin-left:-285px;	// offset	
 	}
 	
 	form{
@@ -263,6 +305,12 @@
 
 .content-constrained-narrow{
 	max-width:410px;
+}
+
+.content-constrained-article{
+	max-width:300px;
+	padding:0 20px;
+	margin:auto;
 }
 
 .is-collapsed{
