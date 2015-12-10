@@ -32,7 +32,7 @@
 			
 			&.content-heading-small-margin{
 				@include respond($medium){
-					margin:133px 0 25px;
+					margin:127px 0 25px;
 				}
 			}
 		}
@@ -472,4 +472,10 @@
 	> h2, dl, p, div{
 		display:block;
 	}
+}
+
+.icon-yarn-logo{
+	width:146px;
+	height:56px;
+	display:inline-block;
 }

@@ -240,9 +240,9 @@ strong {
         margin: 0 0 22px; }
       @media screen and (min-width: 768px) {
         .content h1.content-heading.content-heading-small-margin {
-          margin: 133px 0 25px; } }
+          margin: 127px 0 25px; } }
       .lt-ie9 .content h1.content-heading.content-heading-small-margin {
-        margin: 133px 0 25px; }
+        margin: 127px 0 25px; }
   .content h2 {
     font-size: 24px;
     font-weight: normal;
@@ -636,6 +636,11 @@ strong {
   visibility: visible; }
   .is-expanded > h2, .is-expanded dl, .is-expanded p, .is-expanded div {
     display: block; }
+
+.icon-yarn-logo {
+  width: 146px;
+  height: 56px;
+  display: inline-block; }
 
 .footer-bar {
   height: 3px;

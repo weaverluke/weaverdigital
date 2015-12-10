@@ -1,4 +1,9 @@
 
+.icon-yarn-logo {
+	background-image: url('png/yarn-logo.png');
+	background-repeat: no-repeat;
+}
+
 .icon-chevron-down {
 	background-image: url('png/chevron-down.png');
 	background-repeat: no-repeat;
