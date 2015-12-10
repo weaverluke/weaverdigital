@@ -17,12 +17,7 @@ var navScroll = {
 			e.preventDefault();	
 			anchor = $(this).data('scroll');		
 			if (typeof anchor != 'undefined'){				
-				// test content height to see if a navigation offset is required
-//				if($(anchor).height() > $(window).height())
-//					offset = $(anchor).offset().top - 83;				
-//				else
-					offset = $(anchor).offset().top;				
-				
+				offset = $(anchor).offset().top;								
 				$('html, body').animate({scrollTop:offset}, 300);
 			}
 			else{

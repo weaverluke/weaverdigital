@@ -690,13 +690,6 @@ strong {
       padding-right: 11px; }
     .global-nav > li.active > a {
       color: #d92128; }
-      .global-nav > li.active > a:hover {
-        color: #565656; }
-        @media screen and (min-width: 960px) {
-          .global-nav > li.active > a:hover {
-            color: #d92128; } }
-        .lt-ie9 .global-nav > li.active > a:hover {
-          color: #d92128; }
     .global-nav > li:first-child {
       display: none; }
       @media screen and (min-width: 768px) {

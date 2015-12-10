@@ -45,14 +45,6 @@
 		&.active{
 			> a{				
 				color:$red;
-				
-				&:hover{
-					color:$grey;
-					
-					@include respond($large){
-						color:$red;
-					}
-				}
 			}
 		}
 		
