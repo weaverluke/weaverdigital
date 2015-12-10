@@ -441,7 +441,7 @@ strong {
     .lt-ie9 .content .content-image-noddle {
       right: 0; }
   .content .content-image-container-local-discoveries {
-    height: 530px; }
+    height: 632px; }
     @media screen and (min-width: 321px) {
       .content .content-image-container-local-discoveries {
         height: 790px; } }
@@ -449,7 +449,7 @@ strong {
       height: 790px; }
   .content .content-image-local-discoveries {
     position: absolute;
-    height: 530px;
+    height: 632px;
     width: 451px;
     display: block;
     background: url(/img/local-discoveries-screen-low-2x.jpg) center top no-repeat;
