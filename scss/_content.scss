@@ -323,10 +323,14 @@
 			height:655px;
 			width:474px;
 			background:url(/img/yarn-screen.jpg) center top no-repeat;
-			background-size:474px auto;
+			background-size:474px auto;			
+			margin-left:-264px;	// offset	
+		}	
+		
+		@include respond($medium){
 			right:-20px;
 			left:auto;
-		}	
+		}
 	}
 	
 	.content-image-container-learn-skills{
@@ -352,6 +356,10 @@
 			width:588px;
 			background:url(/img/learn-skills.jpg) center top no-repeat;
 			background-size:588px auto;
+			margin-left:-273px;	// offset	
+		}
+		
+		@include respond($medium){
 			right:-20px;
 			left:auto;
 		}

@@ -498,13 +498,18 @@ strong {
         width: 474px;
         background: url(/img/yarn-screen.jpg) center top no-repeat;
         background-size: 474px auto;
-        right: -20px;
-        left: auto; } }
+        margin-left: -264px; } }
     .lt-ie9 .content .content-image-yarn {
       height: 655px;
       width: 474px;
       background: url(/img/yarn-screen.jpg) center top no-repeat;
       background-size: 474px auto;
+      margin-left: -264px; }
+    @media screen and (min-width: 768px) {
+      .content .content-image-yarn {
+        right: -20px;
+        left: auto; } }
+    .lt-ie9 .content .content-image-yarn {
       right: -20px;
       left: auto; }
   .content .content-image-container-learn-skills {
@@ -529,13 +534,18 @@ strong {
         width: 588px;
         background: url(/img/learn-skills.jpg) center top no-repeat;
         background-size: 588px auto;
-        right: -20px;
-        left: auto; } }
+        margin-left: -273px; } }
     .lt-ie9 .content .content-image-learn-skills {
       height: 704px;
       width: 588px;
       background: url(/img/learn-skills.jpg) center top no-repeat;
       background-size: 588px auto;
+      margin-left: -273px; }
+    @media screen and (min-width: 768px) {
+      .content .content-image-learn-skills {
+        right: -20px;
+        left: auto; } }
+    .lt-ie9 .content .content-image-learn-skills {
       right: -20px;
       left: auto; }
   .content form {
