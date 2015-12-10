@@ -605,7 +605,8 @@ strong {
   padding: 0 20px; }
 
 .content-constrained-narrow {
-  max-width: 410px; }
+  max-width: 410px;
+  padding: 0 20px; }
 
 .content-constrained-article {
   max-width: 300px;
@@ -659,7 +660,6 @@ strong {
   overflow: hidden;
   margin: 0;
   padding: 0;
-  height: 56px;
   width: 100%; }
   .global-nav > li {
     display: inline; }
