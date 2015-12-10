@@ -450,12 +450,12 @@ strong {
   .content .content-image-local-discoveries {
     position: absolute;
     height: 530px;
-    width: 379px;
+    width: 451px;
     display: block;
     background: url(/img/local-discoveries-screen-low-2x.jpg) center top no-repeat;
-    background-size: 379px auto;
+    background-size: 451px auto;
     left: 50%;
-    margin-left: -284px; }
+    margin-left: -306px; }
     @media screen and (min-width: 321px) {
       .content .content-image-local-discoveries {
         height: 790px;

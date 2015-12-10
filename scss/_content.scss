@@ -280,12 +280,12 @@
 	.content-image-local-discoveries{
 		position:absolute;
 		height:530px;
-		width:379px;
+		width:451px;
 		display:block;
 		background:url(/img/local-discoveries-screen-low-2x.jpg) center top no-repeat;
-		background-size:379px auto;
+		background-size:451px auto;
 		left:50%;
-		margin-left:-284px;	// offset	
+		margin-left:-306px;	// offset	
 		
 		@include respond(321px){
 			height:790px;
