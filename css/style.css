@@ -630,7 +630,7 @@ strong {
 
 .is-expanded {
   transition: opacity 0.6s 0.3s;
-  margin-top: -40px;
+  margin-top: -60px;
   height: auto;
   opacity: 1;
   visibility: visible; }
@@ -828,7 +828,8 @@ strong {
     .testimonials > blockquote > p {
       font-family: "HelveticaNeueW01-Thin";
       margin-bottom: 25px;
-      font-size: 49px; }
+      font-size: 49px;
+      line-height: normal; }
       .testimonials > blockquote > p.testimonial-about {
         margin: 0 0 -3px; }
         @media screen and (min-width: 768px) {
