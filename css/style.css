@@ -732,6 +732,12 @@ strong {
     z-index: 1;
     top: 0; }
 
+.lt-ie9 .icon-logo-png {
+  background-image: url("/img/logo.png"); }
+
+.lt-ie9 .global-nav > li:first-child > .icon-logo-small {
+  background-image: url("/img/logo-small.png"); }
+
 .splash h1 {
   margin: 0;
   padding: 0;
