@@ -1,3 +1,13 @@
+var MTIProjectId='569a85b2-53e6-45d0-bb21-b7850352d3ff';
+
+(function() {
+	var mtiTracking = document.createElement('script');
+	mtiTracking.type='text/javascript';
+	mtiTracking.async='true';
+	mtiTracking.src=('https:'==document.location.protocol?'https:':'http:')+'//fast.fonts.net/t/trackingCode.js';
+	(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild( mtiTracking );
+})();
+   
 var navScroll = {
 	links:null,
 	toplinks:null,
